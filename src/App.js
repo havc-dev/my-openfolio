@@ -7,22 +7,29 @@ import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
 
 import './App.css';
-import background from './images/background.jpg';
+// import background_jpg from './images/background.jpg';
+// import background_webp from './images/background.webp';
+// import background_avif from './images/background.avif';
 
 function App(props) {
-  var sectionStyle = {
-    width: "100%",
-    height: "100vh",
-    backgroundImage: `url(${background})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center"
-  };
+  // var sectionStyle = {
+  //   width: "100%",
+  //   height: "100vh",
+  //   // backgroundImage: `url(${background_jpg})`,
+  //   backgroundImage: `image-set(
+  //     "${background_jpg}" type("image/jpg"),
+  //     "${background_webp}" type("image/webp"),
+  //     "${background_avif}" type("image/avif"),
+  //   )`,
+  //   backgroundRepeat: "no-repeat",
+  //   backgroundPosition: "center"
+  // };
 
-  
   const { home, about, projects, contact } = props.info;
-  // const { home, about, projects } = props.info;
+
   return (
-    <div className="app-wrapper"   style={ sectionStyle }>
+    // <div className="app-wrapper"   style={ sectionStyle }>
+    <div className="app-wrapper">
       <div className="bg-overlay">
       <NavBar />
       { <Switch>

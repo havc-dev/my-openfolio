@@ -88,6 +88,12 @@ body label {
   width: 100vw;
   background-color: #0d0d0d;
   background-size: cover;
+  width: "100%";
+  height: "100vh";
+  background-image: -webkit-image-set("./components/Images/background.jpg" type("image/jpg"), "./components/Images/background.jpg" type("image/webp"), "./components/Images/background.jpg" type("image/avif"));
+  background-image: image-set("./components/Images/background.jpg" type("image/jpg"), "./components/Images/background.jpg" type("image/webp"), "./components/Images/background.jpg" type("image/avif"));
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bg-overlay {
