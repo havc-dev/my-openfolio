@@ -77,7 +77,6 @@ body {
   }  
 }
 
-
 .app-wrapper {
   height: 100vh;
   width: 100vw;
@@ -88,8 +87,8 @@ body {
   // background-image: url(./components/Images/background.jpg);
   background-image: image-set(
     "./components/Images/background.jpg" type("image/jpg"),
-    "./components/Images/background.jpg" type("image/webp"),
-    "./components/Images/background.jpg" type("image/avif"),
+    "./components/Images/background.webp" type("image/webp"),
+    "./components/Images/background.avif" type("image/avif"),
   );
   background-repeat: no-repeat;
   background-position: center;
