@@ -1,0 +1,19 @@
+@import '../sass/Variables.scss';
+
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    height: 6rem;
+    width: 12rem;
+    .skill-icon {
+        color: $color-Accent;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+}

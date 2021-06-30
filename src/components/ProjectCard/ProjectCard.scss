@@ -1,0 +1,39 @@
+@import '../sass/Variables.scss';
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border-radius: $border-Radius;
+    .project-title {
+        height: 7rem;
+        h2 {
+            color: $color-Accent;
+            flex: 0 1 auto;
+            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+        }
+    }
+    .project-info{
+        height: 55rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: $border-Radius;
+        justify-content: space-between;
+        .project-info__images {
+            width: 62%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-info__description {
+            width: 38%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}

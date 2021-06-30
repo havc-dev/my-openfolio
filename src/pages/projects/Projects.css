@@ -1,0 +1,35 @@
+.my-projects {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+}
+
+.my-projects .projects-title {
+  height: 8rem;
+}
+
+.my-projects .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 120rem;
+  height: 65rem;
+  -webkit-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
+          box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
+}
+/*# sourceMappingURL=Projects.css.map */

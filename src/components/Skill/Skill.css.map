@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,MAAM,EAAE,MAAM;EACd,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;CAQf;;AAhBD,AASI,cATU,CASV,WAAW,CAAC;EACR,KAAK,ECME,OAAkB;EDLzB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "Skill.scss",
+        "../sass/Variables.scss"
+    ],
+    "names": [],
+    "file": "Skill.css"
+}

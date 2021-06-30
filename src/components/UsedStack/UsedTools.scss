@@ -1,0 +1,19 @@
+@import '../sass/Variables.scss';
+
+.used-tools {
+    width: 100%;
+    height: 25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .used-tools-title{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .used-tools-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

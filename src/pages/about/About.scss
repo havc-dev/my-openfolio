@@ -1,0 +1,31 @@
+@import '../../components/sass/Variables.scss';
+
+.about-me {
+    width: 100%;
+    height: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+    .title {
+        line-height: 2;
+    }
+    .subtitle {
+        width: 100%;
+        line-height: 2;
+        margin: 0 auto;
+        .subtitle-location{
+            color: $color-White;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+        } 
+    }
+
+    .stack {
+        height: 100%;
+    }
+}
+

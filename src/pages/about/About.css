@@ -1,0 +1,39 @@
+.about-me {
+  width: 100%;
+  height: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+}
+
+.about-me .title {
+  line-height: 2;
+}
+
+.about-me .subtitle {
+  width: 100%;
+  line-height: 2;
+  margin: 0 auto;
+}
+
+.about-me .subtitle .subtitle-location {
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.about-me .stack {
+  height: 100%;
+}
+/*# sourceMappingURL=About.css.map */

@@ -1,0 +1,9 @@
+@import '../../components/sass/Variables.scss';
+
+.contact {
+    text-align: center;
+    width: 120rem;
+    color: $color-White;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+    margin: 0 auto;
+}

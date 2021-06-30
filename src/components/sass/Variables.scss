@@ -1,0 +1,137 @@
+///// Index \\\\\
+
+/////***** Color ***** \\\\\
+///// Color Theme \\\\\
+///// Color Theme - Tones\\\\\
+
+/////***** Fonts ***** \\\\\
+///// Fonts - Family \\\\\
+///// Fonts - Sizes \\\\\
+///// Fonts - Weight  \\\\\
+
+/////***** Spacing *****\\\\\
+
+
+/////***** Color ***** \\\\\
+
+/////Color Theme\\\\\
+$color-Primary: hsl(20, 100%, 50%);
+$color-Accent: hsl(10, 100%, 50%);
+$color-White: hsl(0, 0%, 100%);
+$color-Black: hsl(0, 0%, 0%);
+$color-Success: hsl(120, 100%, 30%);
+$color-Warning: hsl(60, 100%, 40%);
+$color-Error: hsl(359, 98%, 45%);
+
+/////Color Theme - Tones\\\\\
+
+$color-Primary-100: hsl(20, 100%, 70%);
+$color-Primary-200: hsl(20, 100%, 65%);
+$color-Primary-300: hsl(20, 100%, 60%);
+$color-Primary-400: hsl(20, 100%, 55%);
+$color-Primary-500: hsl(20, 100%, 50%);
+$color-Primary-600: hsl(20, 100%, 45%);
+$color-Primary-700: hsl(20, 100%, 40%);
+$color-Primary-800: hsl(20, 100%, 35%);
+$color-Primary-900: hsl(20, 100%, 30%);
+
+$color-Accent-100: hsl(10, 100%, 70%);
+$color-Accent-200: hsl(10, 100%, 65%);
+$color-Accent-300: hsl(10, 100%, 60%);
+$color-Accent-400: hsl(10, 100%, 55%);
+$color-Accent-500: hsl(10, 100%, 50%);
+$color-Accent-600: hsl(10, 100%, 45%);
+$color-Accent-700: hsl(10, 100%, 40%);
+$color-Accent-800: hsl(10, 100%, 35%);
+$color-Accent-900: hsl(10, 100%, 30%);
+
+$color-Neutral-50: hsl(0, 0%, 95%);
+$color-Neutral-100: hsl(0, 0%, 85%);
+$color-Neutral-200: hsl(0, 0%, 75%);
+$color-Neutral-300: hsl(0, 0%, 65%);
+$color-Neutral-400: hsl(0, 0%, 55%);
+$color-Neutral-500: hsl(0, 0%, 45%);
+$color-Neutral-600: hsl(0, 0%, 35%);
+$color-Neutral-700: hsl(0, 0%, 25%);
+$color-Neutral-800: hsl(0, 0%, 15%);
+$color-Neutral-900: hsl(0, 0%, 5%);
+
+$color-Grey-100: hsl(0, 0%, 65%);
+$color-Grey-200: hsl(0, 0%, 60%);
+$color-Grey-300: hsl(0, 0%, 55%);
+$color-Grey-400: hsl(0, 0%, 50%);
+$color-Grey-500: hsl(0, 0%, 45%);
+$color-Grey-600: hsl(0, 0%, 40%);
+$color-Grey-700: hsl(0, 0%, 35%);
+$color-Grey-800: hsl(0, 0%, 30%);
+$color-Grey-900: hsl(0, 0%, 25%);
+
+$invisible: hsl(0,0%, 0%);
+
+$gradient: linear-gradient(0deg, hsla(0, 0%, 0%, 0.81) 0%, rgba(0,0,0,0.6866947462578781) 35%, rgba(0,0,0,0.5) 100%);
+
+/////***** Fonts ***** \\\\\
+
+///// Fonts - Family \\\\\
+
+$ff-Primary: 'Quicksand', sans-serif;
+$ff-Secondary: 'Montserrat', sans-serif;
+$ff-Display:'Comfortaa', cursive;
+
+///// Insert in Public / index.html \\\\\
+//////////////////////////////////////////////////////////////////////////////////////////////
+// <link rel="preconnect" href="https://fonts.gstatic.com">
+// <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///// Fonts - Sizes \\\\\
+$fs-100: 0.8rem;
+$fs-200: 1.6rem;
+$fs-300: 2.4rem;
+$fs-400: 3.2rem;
+$fs-500: 4rem;
+$fs-600: 4.8rem;
+$fs-700: 5.4rem;
+$fs-800: 6.2rem;
+$fs-900: 7.2rem;
+$fs-1000: 8rem;
+$fs-1100: 8.8rem;
+$fs-1200: 9.6rem;
+
+///// Fonts - Weight  \\\\\
+
+$fw-Light: 300;
+$fw-Regular: 400;
+$fw-Medium: 500;
+$fw-Bold: 600;
+$fw-Black: 700;
+
+/////***** Spacing *****\\\\\
+
+$spacing-v: 9vmin;
+$spacing-h: 16vmax;
+$spacing: 5rem;
+
+$border-Radius: 5px;
+
+$y-translation-start: -10px;
+$y-translation-max: 10px;
+
+// X Y spread/size blur color-opacity
+$box-shadow-1:
+5px 2px 1px 2px hsla(0, 0%, 0%, 0.1),
+6px 6px 5px 2px rgba(0, 0, 0, 0.15),
+7px 10px 8px 2px rgba(0, 0, 0, 0.16),
+8px 15px 13px 2px rgba(0, 0, 0, 0.17),
+9px 30px 25px 2px rgba(0, 0, 0, 0.18),
+10px 50px 40px 2px rgba(0, 0, 0, 0.22);
+
+$box-shadow-2:
+10px 2px 1px 2px hsla(10, 0%, 0%, 0.1),
+12px 6px 5px 2px rgba(0, 0, 0, 0.15),
+14px 10px 8px 2px rgba(0, 0, 0, 0.16),
+16px 15px 13px 2px rgba(0, 0, 0, 0.17),
+18px 30px 25px 2px rgba(0, 0, 0, 0.18),
+20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+
+$form-outline: none !important;

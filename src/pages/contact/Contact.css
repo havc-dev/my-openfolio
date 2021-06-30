@@ -1,0 +1,9 @@
+.contact {
+  text-align: center;
+  width: 120rem;
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Contact.css.map */

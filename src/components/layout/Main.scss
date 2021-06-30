@@ -1,0 +1,13 @@
+@import '../sass/Variables.scss';
+
+.main {
+    height: 100%;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    // overflow: scroll;
+}

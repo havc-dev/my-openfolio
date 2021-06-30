@@ -1,0 +1,45 @@
+{
+    "project_title": "BarberiApp",
+    "description": {
+        "p1": "This project was made from a course, I adapted it to fit the image of a local Barber Shop named Cavaliers",
+        "p2": "It was my first project and I like how I used the colour palette to fit their brand"
+    },
+    "images": [
+        {
+            "title": "barberiapp_home",
+            "description": "Landing site",
+            "avif": "barberiapp.avif",
+            "webp": "barberiapp.webp",
+            "png":  "barberiapp.png",
+            "jpg":  "barberiapp.jpg"
+        }
+    ],
+    "used_tools": [
+        {
+        "index": 0,
+        "tool": "HTML5",
+        "icon": "fab fa-html5 fa-fw fa-lg"
+        },
+        {
+        "index": 1,
+        "tool": "CSS",
+        "icon": "fab fa-css3-alt fa-fw fa-lg"
+        },
+        {
+        "index": 2,
+        "tool": "JavaScript",
+        "icon": "fab fa-js fa-fw fa-lg"
+        },
+        {
+        "index": 3,
+        "tool": "Sass",
+        "icon": "fab fa-sass fa-fw fa-lg"
+        }
+    ],
+    "link": {
+        "className": "link",
+        "icon":"fas fa-github fa-fw fa-lg",
+        "btn_text": "See in GitHub!",
+        "href": "/"
+    }
+}

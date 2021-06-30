@@ -1,0 +1,19 @@
+@import '../sass/Variables.scss';
+
+.btn-cta {
+        background-color: $color-Accent;
+        font-family: $ff-Secondary;
+        font-weight: $fw-Bold;
+        color: $color-White;
+        border: none;
+        border-radius: $border-Radius;
+        padding: 1.5rem 4.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        box-shadow: $box-shadow-2;
+}
+.btn-cta:hover {
+        background-color: $color-Accent;
+        color: $color-Neutral-900;
+        transform: scale(1.1);
+}

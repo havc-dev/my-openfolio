@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACL,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,MAAM;EACb,KAAK,ECcK,KAAgB;EDb1B,MAAM,EAAE,6CAA6C;EACrD,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "Contact.scss",
+        "../../components/sass/Variables.scss"
+    ],
+    "names": [],
+    "file": "Contact.css"
+}

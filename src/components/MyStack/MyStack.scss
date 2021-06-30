@@ -1,0 +1,13 @@
+@import '../sass/Variables.scss';
+
+.skills-wrapper {
+    width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+    .my-skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
