@@ -1,9 +1,9 @@
-import Main from '../../components/layout/Main';
-import NavBarSpacer from '../../components/layout/NavBarSpacer';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import CallToAction from "../../components/CallToAction/CallToAction";
+import Button from "../../components/Button/Button";
 
 import './Projects.css'
+import NavBar from '../../components/NavBar/NavBar';
+import Header from '../../components/layout/Header';
 
 const Projects = (props) => {
 
@@ -12,16 +12,11 @@ const Projects = (props) => {
     const { className, icon, btn_text, type} = button;
 
     return (
-        <>
-        <Main>
-        <NavBarSpacer />
-            <div className="my-projects">
-                <div className="header">
-                    <div className="projects-title">
-                        <h1>{title}</h1>
-                    </div>
-                </div>
-                <div className="projects-container">
+        <div className="projects-wrapper">
+        <NavBar />
+        <main className="projects">
+            <Header title={title} />
+            <div className="projects-container">
                 {projects.map((project) =>
                     <ProjectCard
                         key={project.project_title}
@@ -32,16 +27,15 @@ const Projects = (props) => {
                         link={project.link}
                     />
                 )}
-                </div>
-                <CallToAction
-                    className={className}
-                    icon={icon}
-                    btn_text={btn_text}
-                    type={type}
-                />
             </div>
-        </Main>
-        </>
+            <Button 
+                className={className}
+                icon={icon}
+                btn_text={btn_text}
+                type={type}
+            />
+        </main>
+        </div>
     )
 }
 

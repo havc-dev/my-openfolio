@@ -7,41 +7,46 @@
 
 #Logotipo-nav #C {
   fill: #d9d9d9;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
 }
 
 #Logotipo-nav #A {
   fill: #ff2b00;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
 }
 
 #Logotipo-nav #V {
   fill: #ff2b00;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
 }
 
 #Logotipo-nav #D {
   fill: #d9d9d9;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
 }
 
 #Logotipo-nav:hover {
-  height: 5rem;
-  margin: 0.2rem 0;
-  scale: 1.05;
   filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.3));
   -webkit-filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.3));
 }
 
 #Logotipo-nav:hover #C {
-  fill: #0d0d0d;
+  fill: #991a00;
 }
 
 #Logotipo-nav:hover #A {
-  fill: #ff2b00;
+  fill: #bfbfbf;
 }
 
 #Logotipo-nav:hover #V {
-  fill: #ff2b00;
+  fill: #bfbfbf;
 }
 
 #Logotipo-nav:hover #D {
-  fill: #0d0d0d;
+  fill: #991a00;
 }
 /*# sourceMappingURL=Logo.css.map */

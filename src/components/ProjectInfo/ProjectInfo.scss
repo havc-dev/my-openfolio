@@ -1,18 +1,17 @@
 @import '../sass/Variables.scss';
 
 .description {
-    height: 40rem;
+    margin: 1em auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     .description-title {
         width: 100%;
         color: $color-Accent;
         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+        margin: 1em auto;
     }
     .description-text {
-        height: 28rem;
         width: 100%;
         text-align: center;
         color: $color-White;
@@ -20,5 +19,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        p {
+            margin: 1em auto;
+        }
     }
 }

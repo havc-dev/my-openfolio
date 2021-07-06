@@ -1,5 +1,5 @@
 .description {
-  height: 40rem;
+  margin: 1em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,10 +7,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .description .description-title {
@@ -18,10 +17,10 @@
   color: #ff2b00;
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
+  margin: 1em auto;
 }
 
 .description .description-text {
-  height: 28rem;
   width: 100%;
   text-align: center;
   color: white;
@@ -36,5 +35,9 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.description .description-text p {
+  margin: 1em auto;
 }
 /*# sourceMappingURL=ProjectInfo.css.map */

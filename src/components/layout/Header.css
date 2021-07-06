@@ -1,0 +1,16 @@
+.header {
+  margin: 2em auto;
+}
+
+.header .header-title {
+  color: white;
+}
+
+.header .header-subtitle {
+  color: #ff2b00;
+}
+
+.header .header-subtitle .location {
+  color: white;
+}
+/*# sourceMappingURL=Header.css.map */

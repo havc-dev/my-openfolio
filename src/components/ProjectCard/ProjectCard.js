@@ -11,9 +11,7 @@ const ProjectCard = (props) => {
 
     return (
         <div className="project-card" >
-            <div className="project-title">
-                <h2>{title}</h2>
-            </div>
+            <h2>{title}</h2>
             <div className="project-info">
                 <div className="project-info__images">
                     <Images images={images}/>

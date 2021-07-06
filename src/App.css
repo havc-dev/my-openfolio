@@ -1,104 +1,85 @@
-html {
-  /* 1rem = 10px */
-  font-size: 62.5%;
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 body {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.81)), color-stop(35%, rgba(0, 0, 0, 0.686695)), to(rgba(0, 0, 0, 0.5)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 0%, rgba(0, 0, 0, 0.686695) 35%, rgba(0, 0, 0, 0.5) 100%);
-  background-color: #0d0d0d;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.6rem;
-  margin: 0 0;
-  padding: 0 0;
-  height: 100vh;
-  width: 100vw;
-  line-height: 2;
-  overflow: hidden;
   color: white;
+  overflow-x: hidden;
+  height: 100vh;
+  font-size: 1em;
 }
 
-body img {
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 2048px) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+#root {
+  height: 100%;
   width: 100%;
 }
 
-body h1 {
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
-  font-size: 4rem;
-  margin: 0;
-  color: white;
-}
-
-body h2 {
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
-  font-size: 3.2rem;
-  color: #ff2b00;
-  margin: 0;
-}
-
-body h3 {
-  font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  font-size: 3.2rem;
-  margin: 0;
-  color: white;
-}
-
-body h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  margin: 0;
-  color: #ff2b00;
-}
-
-body p {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  margin: 0;
-}
-
-body span {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  margin: 0;
-}
-
-body input {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  margin: 0;
-}
-
-body label {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  font-size: 2.4rem;
-  margin: 0;
-  color: #ff2b00;
-}
-
 .app-wrapper {
-  height: 100vh;
-  width: 100vw;
-  background-color: #0d0d0d;
-  background-size: cover;
-  width: "100%";
-  height: "100vh";
+  height: 100%;
+  width: 100%;
+  background-image: url(./components/Images/background.jpg);
   background-image: -webkit-image-set("./components/Images/background.jpg" type("image/jpg"), "./components/Images/background.webp" type("image/webp"), "./components/Images/background.avif" type("image/avif"));
   background-image: image-set("./components/Images/background.jpg" type("image/jpg"), "./components/Images/background.webp" type("image/webp"), "./components/Images/background.avif" type("image/avif"));
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .bg-overlay {
-  background-color: rgba(0, 0, 0, 0.75);
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

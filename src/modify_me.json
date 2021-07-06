@@ -2,7 +2,7 @@
     "home": {
         "title": "Adrián Velázquez",
         "sub_title": "Front End Developer",
-        "text": "I'm a self-taught Front End Developer who likes to play with CSS until I'm comfortable with the results",
+        "text": "I'm a self-taught Front End Developer who likes CSS and the customization posibilities it offers",
         "button": {
             "className": "cta",
             "icon":"fas fa-handshake fa-fw fa-lg",
@@ -13,9 +13,9 @@
     "about": {
         "title": "About Me",
         "subtitle": "I'm a Front End Developer",
-        "location": "Cancún, Mx",
-        "aboutMeP1": "I really enjoy to keep my mind bussy learning new things, so now I can code or use a variety of tools like SolidWorks or Linux to name some, learning can be blessing and a curse, you can get lost but thankfully a good friend introduced me to programming and now I can say learning is nothing but a blessing!.",
-        "aboutMeP2": "I want to become a Web Developer with an eye for Design. After that, the next step is learning Back-End, I like the idea of being able of develop the whole projects I have in mind.",
+        "location": "living in Cancún, Mx",
+        "aboutMeP1": "I really enjoy to keep my mind bussy learning new things, learning can be blessing and a curse, you can get lost but thankfully a good friend introduced me to programming and now I can say learning is nothing but a blessing!",
+        "aboutMeP2": "I want to constantly improve my Front End skills. Also I like the idea of being able of develop the whole projects I have in mind learning Back End in the future",
         "stack": [
             {
             "index": 0,
@@ -56,7 +56,7 @@
             {
                 "project_title": "Openfolio",
                 "description": {
-                    "p1": "This portfolio is open-source, it's done as a solution for the Backend Developers who just need an easy to use template.",
+                    "p1": "This portfolio is open-source, it's done as a solution for Developers who just need an easy to use template.",
                     "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
                 },
                 "images": [
@@ -100,7 +100,7 @@
                     "className": "link",
                     "icon":"fab fa-github fa-fw fa-lg",
                     "btn_text": "See in GitHub!",
-                    "href": "/"
+                    "href": "https://github.com/havc-dev/my-openfolio"
                 }
             }
         ],

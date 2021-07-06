@@ -1,4 +1,3 @@
-import ButtonWrapper from '../Button/ButtonWrapper';
 import './Link.css'
 
 const Link = (props) => {
@@ -8,12 +7,9 @@ const Link = (props) => {
     const classes = `link-icon ${icon}`;
 
     return (
-        <ButtonWrapper>
                 <a href={href} className={className}>
-                    <i className={classes}></i>
-                    {btn_text}
+                    <i className={classes}/>{btn_text}
                 </a>
-        </ButtonWrapper>
     )
 }
 

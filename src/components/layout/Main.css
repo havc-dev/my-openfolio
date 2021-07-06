@@ -1,7 +1,6 @@
 .main {
   height: 100%;
   width: 95%;
-  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,5 +13,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: scroll;
 }
 /*# sourceMappingURL=Main.css.map */
