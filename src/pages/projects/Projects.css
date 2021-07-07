@@ -29,6 +29,12 @@
   overflow: scroll;
 }
 
+@media only screen and (min-width: 600px) {
+  .projects-wrapper .projects {
+    max-width: 600px;
+  }
+}
+
 .projects-wrapper .projects .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;

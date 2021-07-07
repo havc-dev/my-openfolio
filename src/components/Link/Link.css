@@ -17,6 +17,12 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
+@media only screen and (min-width: 600px) {
+  .link {
+    width: 40%;
+  }
+}
+
 .link i {
   margin-right: 10px;
 }

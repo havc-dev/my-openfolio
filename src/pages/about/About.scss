@@ -1,4 +1,5 @@
 @import '../../components/sass/Variables.scss';
+@import '../../components/sass/Mixins.scss';
 
 .about-wrapper {
     display: flex;
@@ -8,15 +9,17 @@
     .about {
         width: 95%;
         height: 100%;
-        margin: 0 auto;
-        padding-top: 2em;
+        margin: 3em auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
         overflow: scroll;
+        @include tablet {
+            max-width: 600px;
+        }
         .header {
-            margin-top: 2em;
+            margin-top: 1em;
             line-height: 1.5;
             display: flex;
             flex-direction: column;

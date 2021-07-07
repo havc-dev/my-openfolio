@@ -1,4 +1,5 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
 
 .link {
     background-color: $color-Accent;
@@ -13,6 +14,9 @@
     margin: 2em auto;
     text-align: center;
     transition: transform 0.5s;
+    @include tablet {
+        width: 40%;
+    }
     i {
             margin-right: 10px;
     }

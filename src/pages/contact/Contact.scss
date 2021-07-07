@@ -1,4 +1,5 @@
 @import '../../components/sass/Variables.scss';
+@import '../../components/sass/Mixins.scss';
 
 .contact-wrapper  {
 
@@ -10,10 +11,13 @@
     .contact {
         width: 95%;
         height: 100%;
-        margin: 1em auto;
+        margin: 3em auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+        @include tablet {
+            max-width: 600px;
+        }
     }
 }

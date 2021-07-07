@@ -1,9 +1,19 @@
 .skills-wrapper {
   width: 100%;
-  margin: 1em auto;
+  margin: 2em auto;
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media only screen and (min-width: 600px) {
+  .skills-wrapper {
+    max-width: 550px;
+  }
+}
+
+.skills-wrapper .skills-title {
+  margin: 1em auto;
 }
 
 .skills-wrapper .my-skills {

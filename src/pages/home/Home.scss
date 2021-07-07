@@ -1,4 +1,5 @@
 @import '../../components/sass/Variables.scss';
+@import '../../components/sass/Mixins.scss';
 
 .home-wrapper {
     display: flex;
@@ -13,6 +14,9 @@
         flex-direction: column;
         justify-content: space-between;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
+        @include tablet {
+            max-width: 600px;
+        }
         .header {
             line-height: 2;
             display: flex;

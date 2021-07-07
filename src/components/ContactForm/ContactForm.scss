@@ -31,6 +31,7 @@
 label {
     color: $color-Accent;
     margin-top: 1em;
+    margin-left: 1em;
 }
 input {
     width: 90%;
@@ -53,14 +54,14 @@ input[type=text]:focus {
 input[type=email] {
     height: 2em;
     outline: $form-outline;
-    background-color: hsla(0, 0, 0, 0.50);
+    background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
     border: 2px solid $invisible;
 }
 input[type=email]:focus {
     height: 2em;
     outline: $form-outline;
-    background-color: hsla(0, 0, 0, 0.5);
+    background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
     border: 2px solid $color-Accent-900;
 }
@@ -72,7 +73,7 @@ textarea {
     padding: 1em 1.5em;
     box-sizing: border-box;
     border: 2px solid $invisible;
-    background-color: hsla(0, 0, 0, 0.5);
+    background-color: hsla(0, 0, 0, 0.25);
     resize: none;
     margin: 0 auto;
     color: $color-White;
@@ -84,7 +85,7 @@ textarea:focus {
     padding: 1em 1.5em;
     box-sizing: border-box;
     border: 2px solid $color-Accent-900;
-    background-color: hsla(0, 0, 0, 0.5);
+    background-color: hsla(0, 0, 0, 0.25);
     resize: none;
     margin: 0 auto;
     color: $color-White;

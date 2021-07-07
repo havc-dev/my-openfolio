@@ -28,6 +28,12 @@
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
 }
 
+@media only screen and (min-width: 600px) {
+  .home-wrapper .home {
+    max-width: 600px;
+  }
+}
+
 .home-wrapper .home .header {
   line-height: 2;
   display: -webkit-box;

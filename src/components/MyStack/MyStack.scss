@@ -1,10 +1,18 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
+
 
 .skills-wrapper {
     width: 100%;
-    margin: 1em auto;
+    margin: 2em auto;
     text-align: center;
     justify-content: space-around;
+    @include tablet {
+        max-width: 550px;
+    }
+    .skills-title {
+        margin: 1em auto;
+    }
     .my-skills{
         display: flex;
         flex-direction: row;

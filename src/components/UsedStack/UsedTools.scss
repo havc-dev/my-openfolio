@@ -1,10 +1,15 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
+
 
 .used-tools {
     width: 100%;
     margin: 1em auto;
     display: flex;
     flex-direction: column;
+    @include tablet {
+        max-width: 550px;
+    }
     .used-tools-title{
         width: 100%;
         margin: 0 auto;
