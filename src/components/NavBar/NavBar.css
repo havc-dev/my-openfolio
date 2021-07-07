@@ -37,6 +37,12 @@
   }
 }
 
+.nav-bar .nav-logo a {
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+}
+
 .nav-bar .nav-links {
   width: 100%;
   display: -webkit-box;

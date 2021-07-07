@@ -1,4 +1,6 @@
-import Picture from './Picture'
+import Picture from './Picture';
+
+import './Images.css';
 
 const Images = (props) => {
 

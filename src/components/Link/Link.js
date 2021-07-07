@@ -7,9 +7,11 @@ const Link = (props) => {
     const classes = `link-icon ${icon}`;
 
     return (
+        <>
                 <a href={href} className={className}>
                     <i className={classes}/>{btn_text}
                 </a>
+        </>
     )
 }
 

@@ -12,6 +12,7 @@
 
 .projects-wrapper .projects {
   width: 95%;
+  max-width: 550px;
   height: 100%;
   margin: 0 auto;
   display: -webkit-box;

@@ -1,4 +1,3 @@
-import Main from '../../components/layout/Main';
 import ContactForm from '../../components/ContactForm/ContactForm';
 
 import './Contact.css';

@@ -46,10 +46,30 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+}
+
+.project-card .project-info .project-info__images .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.project-card .project-info .project-info__images .project-links:first-child {
+  margin-right: 1em;
 }
 
 .project-card .project-info .project-info__images img {
-  width: 340px;
+  width: 90%;
   margin: 0 auto;
 }
 

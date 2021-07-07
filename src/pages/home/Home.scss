@@ -13,7 +13,6 @@
         flex-direction: column;
         justify-content: space-between;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
-    
         .header {
             line-height: 2;
             display: flex;
@@ -29,7 +28,6 @@
                 font-size: $fs-160;
             }
         }
-    
         .text {
             width: 85%;
             line-height: 1.5;

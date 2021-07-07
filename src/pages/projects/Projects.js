@@ -24,7 +24,8 @@ const Projects = (props) => {
                         description={project.description}
                         images={project.images}
                         tools={project.used_tools}
-                        link={project.link}
+                        github_link={project.github_link}
+                        live_link={project.live_link}
                     />
                 )}
             </div>
