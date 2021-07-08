@@ -14,16 +14,16 @@ const Home = (props) => {
         <div className="home-wrapper">
             <NavBar />
             <main className="home">
-            <Header title={title} subtitle={sub_title} />
-            <div className="text">
-                <h3>{text}</h3>
-            </div>
-            <Button
-                className={className}
-                icon={icon}
-                btn_text={btn_text}
-                type={type}
-            />
+                <Header title={title} subtitle={sub_title} />
+                <div className="text">
+                    <h3>{text}</h3>
+                </div>
+                <Button
+                    className={className}
+                    icon={icon}
+                    btn_text={btn_text}
+                    type={type}
+                />
             </main>
         </div>
     )

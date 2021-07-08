@@ -7,14 +7,14 @@
     justify-content: space-between;
     align-self: center;
     justify-self: center;
-    height: 4em;
-    width: 6.5em;
+    height: 70px;
+    width: 125px;
     .skill-icon {
         color: $color-Accent;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding: 1em;
+        padding: 0.5em;
         transition: transform 0.5s;
     }
     .skill-icon:hover {

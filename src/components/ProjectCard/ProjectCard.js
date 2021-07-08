@@ -8,20 +8,19 @@ import './ProjectCard.css'
 const ProjectCard = (props) => {
 
     const { title, images, description, tools, github_link, live_link } = props;
-    console.log(props)
 
     return (
-        <div className="project-card" >
+        <div className="project-card" key={title}>
             <h2>{title}</h2>
             <div className="project-info">
-                <div className="project-info__images">
+                <div className="project-imgbtns">
                     <Images images={images}/>
                     <div className="project-links">
                         {!github_link ? null : <Link link={github_link}/>}
                         {!live_link ? null : <Link link={live_link}/>}
                     </div>
                 </div>
-                <div className="project-info__description">
+                <div className="project-description">
                     <ProjectInfo description={description} tools={tools}/>
                     <UsedTools tools={tools}/>
                 </div>

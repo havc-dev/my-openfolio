@@ -10,66 +10,158 @@
     -webkit-box-shadow: $box-shadow-1;
     -moz-box-shadow: $box-shadow-1;
     z-index: 10;
+    line-height: 1;
+    
     @include tablet {
         flex-direction: row;
+        height: 160px;
+        justify-content: space-evenly;
+    }
+    @include laptop {
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .nav-logo {
+        height: 77px;
         display: flex;
-        justify-content: space-around;
-        margin: 1em;
+        align-items: center;
         @include tablet {
-            width: 50%;
+            height: 160px;
         }
-        a{
+        .logo-link {
             width: 100%;
-            margin: auto 0;
-            text-align: center;
+            #Logotipo-nav {
+                width: 50%;
+                max-width: 220px;
+                margin: 1em auto;
+                filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                display: block;
+                text-align: center;
+                @include tablet {
+                    min-width: 250px;
+                    max-width: 383px;
+                }
+                
+                #C {
+                        fill: $color-Neutral-100;
+                        transition: fill 0.5s;
+                }
+                #A {
+                        fill: $color-Accent;
+                        transition: fill 0.5s;
+                }
+                #V {
+                        fill: $color-Accent;
+                        transition: fill 0.5s;
+                }
+                #D {
+                        fill: $color-Neutral-100;
+                        transition: fill 0.5s;
+                }
+            }
+            #Logotipo-nav:hover {
+                filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                #C {
+                        fill: $color-Accent-900;
+                }
+                #A {
+                        fill: $color-Neutral-200;
+    
+                }
+                #V {
+                        fill: $color-Neutral-200;
+    
+                }
+                #D {
+                        fill: $color-Accent-900;
+    
+                }
+            }
         }
     }
     .nav-links {
         width: 100%;
-        display: flex;
         flex-direction: column;
         font-family: $ff-Secondary; 
         font-weight: $fw-Bold;
+        
         @include tablet {
             width: 50%;
         }
-            .nav-link {
-                font-size: $fs-120;
-                background-color: hsla(0, 0, 0, 0.45);
-                text-transform: uppercase;
-                line-height: 1;
-                padding: 0.25em 0.75em;
-                transition: transform 0.5s;
+        @include laptop {
+            width: 100%;
+            flex-direction: row;
+            vertical-align: middle;
+        }
+        .nav-link {
+            font-size: $fs-120;
+            font-size: $fs-100;
+            background-color: hsla(0, 0, 0, 0.15);
+            text-transform: uppercase;
+            line-height: 1;
+            padding: 0.5em 0;
+            transition: transform 0.5s;
+            width: 100%;
+            margin: auto 0;
+            text-align: center;
+            @include tablet {
+                background-color: hsla(0, 0, 0, 0.05);
             }
-            .nav-link:link {
-                color: $color-White;
-                line-height: 1;
-                text-decoration: none;
-                text-align: center;
-                border-bottom: 0.2rem solid $color-Accent;
-            }
-            .nav-link:visited {
-                color: $color-Neutral-100;
-            }
-            .nav-link:hover,
-            .nav-link:focus {
-                box-shadow: $box-shadow-1;
-                -webkit-box-shadow: $box-shadow-1;
-                -moz-box-shadow: $box-shadow-1;
-                color: $color-Accent;
-                transform: scale(1.05);
-            }
-            .nav-link:active {
-                color: $color-Primary;
-                transform: scale(1.05);
-            }
-            .current {
-                background-color: hsla(0, 0, 0, 0.15);
-                border-bottom: 0.2rem solid $color-Accent;
-                cursor: not-allowed;
-            }
+        }
+        .nav-link:link {
+            color: $color-White;
+            line-height: 1;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 0.2rem solid $color-Accent;
+        }
+        .nav-link:visited {
+            color: $color-Neutral-100;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+            box-shadow: $box-shadow-1;
+            -webkit-box-shadow: $box-shadow-1;
+            -moz-box-shadow: $box-shadow-1;
+            color: $color-Accent;
+            transform: scale(1.05);
+        }
+        .nav-link:active {
+            color: $color-Primary;
+            transform: scale(1.05);
+        }
+        .current {
+            background-color: hsla(0, 0, 0, 0.15);
+            border-bottom: 0.2rem solid $color-Accent;
+            cursor: not-allowed;
+        }
         
     }
+}
+button {
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+    color: $color-Accent;
+}
+.menu-enter {
+    transform: scale(0);
+    display: none;
+}
+.menu-enter-active {
+  transform: scale(1);
+  transition: display 300ms, transform 300ms;
+  display: flex;
+}
+.menu-exit {
+  display: flex;
+  transform: scale(1);
+}
+.menu-exit-active {
+  display: none;
+  transform: scale(0);
+  transition: display 300ms, transform 300ms;
 }

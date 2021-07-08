@@ -6,8 +6,9 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    overflow: scroll;
     .home {
-        width: 95%;
+        width: 90%;
         height: 100%;
         margin: 3em auto;
         display: flex;

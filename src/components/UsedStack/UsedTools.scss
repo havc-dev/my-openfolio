@@ -4,20 +4,19 @@
 
 .used-tools {
     width: 100%;
-    margin: 1em auto;
-    display: flex;
-    flex-direction: column;
+    margin: 2em auto;
+    text-align: center;
+    justify-content: space-around;
     @include tablet {
         max-width: 550px;
     }
     .used-tools-title{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+        margin: 1em auto;
     }
     .used-tools-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 90%;
     }
 }

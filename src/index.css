@@ -12,3 +12,6 @@ code {
     monospace;
 }
 
+body {
+  overflow-x: hidden;
+}

@@ -10,13 +10,9 @@
     border-radius: $border-Radius;
     padding: $button-Padding;
     box-shadow: $box-shadow-2;
-    width: 65%;
     margin: 2em auto;
     text-align: center;
     transition: transform 0.5s;
-    @include tablet {
-        width: 40%;
-    }
     i {
             margin-right: 10px;
     }

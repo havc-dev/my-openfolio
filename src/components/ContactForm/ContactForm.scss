@@ -2,16 +2,16 @@
 
 .contact-title{
     margin: 1em auto;
-    font-size: $fs-160;
+    font-size: $fs-140;
 }
+
 .contact-form {
     box-shadow: $box_shadow_1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    width: 95%;
-    overflow: scroll;
+    width: 90%;
 
     .form-group {
         width: 100%;
@@ -28,6 +28,7 @@
         }
     }
 }
+
 label {
     color: $color-Accent;
     margin-top: 1em;

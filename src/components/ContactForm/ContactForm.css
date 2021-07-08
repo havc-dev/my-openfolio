@@ -1,6 +1,6 @@
 .contact-title {
   margin: 1em auto;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .contact-form {
@@ -17,8 +17,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  width: 95%;
-  overflow: scroll;
+  width: 90%;
 }
 
 .contact-form .form-group {

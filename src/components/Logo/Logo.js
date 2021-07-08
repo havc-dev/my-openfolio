@@ -1,5 +1,3 @@
-import './Logo.css'
-
 const Logo = (props) => {
 
   const id = `Logotipo-${props.id}`;

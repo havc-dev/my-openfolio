@@ -1,17 +1,26 @@
+import React, { useState } from "react"
 import { NavLink } from 'react-router-dom';
 
 import Logo from '../Logo/Logo';
 import './NavBar.css';
 
 const NavBar = () => {
+
+    const [isHidden, setIsHidden] = useState(true)
+    
     return (
         <div className='nav-bar'>
             <div className='nav-logo'>
                     <a href='/' className="logo-link">
                         <Logo id="nav"/>
                     </a>
-                </div>
-            <nav className='nav-links'>
+                <button  onClick={ () => setIsHidden(!isHidden)} 
+                    className='menu'
+                    >
+                    <i className="fas fa-bars fa-2x" ></i>
+                </button>
+            </div>
+            <nav className={isHidden ? "nav-links menu-enter menu-enter-active" : "nav-links menu-exit menu-exit-active" }>
                 <NavLink activeClassName="current" className='nav-link' to="/" exact={true}>
                     Home
                 </NavLink>
@@ -30,3 +39,4 @@ const NavBar = () => {
 }
 
 export default NavBar
+

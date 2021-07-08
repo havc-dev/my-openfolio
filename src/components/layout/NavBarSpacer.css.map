@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,IAAI,EAAE,IAAI;CACb",
-    "sources": [
-        "NavBarSpacer.scss"
-    ],
-    "names": [],
-    "file": "NavBarSpacer.css"
-}

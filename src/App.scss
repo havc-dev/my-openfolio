@@ -18,7 +18,7 @@ body {
     font-size: $fs-110;
   }
   @include laptop {
-    font-size: $fs-120;
+    font-size: $fs-100;
   }
   @include desktop {
     font-size: $fs-130;
@@ -70,3 +70,5 @@ h4 {
   width: 100%;
   height: 100%;
 }
+
+
