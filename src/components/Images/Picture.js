@@ -9,7 +9,7 @@ const Picture = (props) => {
     const url_jpg = `/assets/images/projects/${jpg}`;
 
     return (
-        <picture>
+        <picture className="project-pictures">
             <source srcSet={url_avif} type="image/avif" />
             <source srcSet={url_webp} type="image/webp" />
             <source srcSet={url_png} type="image/png" />

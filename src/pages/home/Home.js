@@ -1,8 +1,8 @@
-import Main from '../../components/layout/Main';
-import NavBarSpacer from '../../components/layout/NavBarSpacer';
-import CallToAction from '../../components/CallToAction/CallToAction';
 
 import './Home.css'
+import NavBar from '../../components/NavBar/NavBar';
+import Header from '../../components/layout/Header';
+import Button from '../../components/Button/Button';
 
 const Home = (props) => {
 
@@ -11,30 +11,21 @@ const Home = (props) => {
     const { className, icon, btn_text, type} = button;
     
     return (
-        <>
-        <Main>
-            <NavBarSpacer />
-            <div className="home">
-                <div className="header">
-                    <div className="title">
-                        <h1>{title}</h1>
-                    </div>
-                    <div className="subtitle">
-                        <h2>{sub_title}</h2>
-                    </div>
-                </div>
+        <div className="home-wrapper">
+            <NavBar />
+            <main className="home">
+                <Header title={title} subtitle={sub_title} />
                 <div className="text">
                     <h3>{text}</h3>
                 </div>
-                <CallToAction
+                <Button
                     className={className}
                     icon={icon}
                     btn_text={btn_text}
                     type={type}
                 />
-            </div>
-        </Main>
-        </>
+            </main>
+        </div>
     )
 }
 

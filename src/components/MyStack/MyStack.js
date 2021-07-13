@@ -9,7 +9,7 @@ const Stack = (props) => {
     return (
         
         <div className="skills-wrapper">
-            <h2>My Current Stack</h2>
+            <h2 className="skills-title">My Current Stack</h2>
             <div className="my-skills">
                 {stack.map((skill) =>
                     <Skill

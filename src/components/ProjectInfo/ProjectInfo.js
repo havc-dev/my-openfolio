@@ -10,6 +10,7 @@ const ProjectInfo = (props) => {
                 <h3 className="description-title">Description:</h3>
                 <div className="description-text">
                     <p>{description.p1}</p>
+                    <br />
                     <p>{description.p2}</p>
                 </div>
             </div>

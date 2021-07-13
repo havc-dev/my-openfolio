@@ -85,18 +85,19 @@ $ff-Display:'Comfortaa', cursive;
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 ///// Fonts - Sizes \\\\\
-$fs-100: 0.8rem;
-$fs-200: 1.6rem;
-$fs-300: 2.4rem;
-$fs-400: 3.2rem;
-$fs-500: 4rem;
-$fs-600: 4.8rem;
-$fs-700: 5.4rem;
-$fs-800: 6.2rem;
-$fs-900: 7.2rem;
-$fs-1000: 8rem;
-$fs-1100: 8.8rem;
-$fs-1200: 9.6rem;
+$fs-80: 0.8em;
+$fs-100: 1em;
+$fs-110: 1.1em;
+$fs-120: 1.2em;
+$fs-130: 1.3em;
+$fs-140: 1.4em;
+$fs-150: 1.5em;
+$fs-160: 1.6em;
+$fs-180: 1.8em;
+$fs-200: 2em;
+$fs-250: 2.5em;
+$fs-300: 3em;
+$fs-500: 5em;
 
 ///// Fonts - Weight  \\\\\
 
@@ -108,8 +109,6 @@ $fw-Black: 700;
 
 /////***** Spacing *****\\\\\
 
-$spacing-v: 9vmin;
-$spacing-h: 16vmax;
 $spacing: 5rem;
 
 $border-Radius: 5px;
@@ -135,3 +134,5 @@ $box-shadow-2:
 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
 
 $form-outline: none !important;
+
+$button-Padding: 10px 30px;

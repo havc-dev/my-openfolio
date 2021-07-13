@@ -1,10 +1,9 @@
-import Main from '../../components/layout/Main';
-import NavBarSpacer from '../../components/layout/NavBarSpacer';
-
 import MyStack from "../../components/MyStack/MyStack";
-import CallToAction from '../../components/CallToAction/CallToAction';
 
 import './About.css'
+import NavBar from '../../components/NavBar/NavBar';
+import Header from "../../components/layout/Header";
+import Button from "../../components/Button/Button";
 
 
 const About = (props) => {
@@ -14,33 +13,24 @@ const About = (props) => {
   const { className, icon, btn_text, type} = button;
 
   return (
-    <>
-      <Main>
-      <NavBarSpacer />
-          <div className="about-me">
-              <div className="header">
-                <div className="title">
-                  <h1>{title}</h1>
-                </div>
-                <div className="subtitle">
-                  <h2>{subtitle}, living in <span className="subtitle-location">{location}</span></h2>
-                </div>
-              </div>
-              <div className="text">
-                <p>{aboutMeP1}</p>
-                <br />
-                <p>{aboutMeP2}</p>
-              </div>
-              <MyStack  stack={stack}/>
-              <CallToAction
-              className={className}
-              icon={icon}
-              btn_text={btn_text}
-              type={type}
-              />
-          </div>
-      </Main>
-      </>
+    <div className="about-wrapper">
+      <NavBar />
+      <main className="about">
+        <Header title={title} subtitle={subtitle} location={location}/>
+        <div className="text">
+          <p className="text-p">{aboutMeP1}</p>
+          <br />
+          <p className="text-p">{aboutMeP2}</p>
+        </div>
+        <MyStack  stack={stack}/>
+        <Button
+        className={className}
+        icon={icon}
+        btn_text={btn_text}
+        type={type}
+        />
+      </main>
+    </div>
   )
 }
 

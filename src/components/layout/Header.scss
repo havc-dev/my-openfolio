@@ -1,0 +1,15 @@
+@import '../sass/Variables.scss';
+
+.header {
+    margin: 2em auto;
+
+    .header-title {
+        color: $color-White;
+    }
+    .header-subtitle{
+        color: $color-Accent;
+        .location {
+            color: $color-White;
+        }
+    }
+}

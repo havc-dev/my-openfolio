@@ -3,17 +3,24 @@
 .skill-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin: 0 auto;
-    justify-content: space-between;
     align-self: center;
     justify-self: center;
-    height: 6rem;
-    width: 12rem;
+    height: 70px;
+    width: 120px;
     .skill-icon {
         color: $color-Accent;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 0.25em;
+        transition: transform 0.5s;
+    }
+    .skill-icon:hover {
+        transform: scale(1.1);
+    }
+    h4 {
+        font-size: $fs-100;
     }
 }

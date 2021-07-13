@@ -1,23 +1,25 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
 
 .link {
-    background-color: $color-White;
+    background-color: $color-Accent;
     font-family: $ff-Secondary;
     font-weight: $fw-Bold;
-    color: $color-Accent;
+    color: $color-White;
     border: none;
     border-radius: $border-Radius;
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-decoration: none;
+    padding: $button-Padding;
     box-shadow: $box-shadow-2;
-    
+    margin: 2em auto;
+    text-align: center;
+    transition: transform 0.5s;
+    i {
+            margin-right: 10px;
+    }
 }
 .link:hover {
-    background-color: $color-White;
-    color: $color-Accent;
+    background-color: $color-Accent;
+    color: $color-Neutral-900;
     transform: scale(1.1);
-    box-shadow: $box-shadow-2;
+    
 }
-

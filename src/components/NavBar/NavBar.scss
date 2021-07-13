@@ -1,69 +1,173 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
 
-.nav-container {
-    height: 5.4rem;
+
+.nav-bar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    background: linear-gradient(0deg, $color-Neutral-900, $color-Neutral-800);
-    position: fixed;
-    top: 0;
     box-shadow: $box-shadow-1;
     -webkit-box-shadow: $box-shadow-1;
     -moz-box-shadow: $box-shadow-1;
-    .nav-bar {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 120rem;
-        display: flex;
+    z-index: 10;
+    line-height: 1;
+    
+    @include tablet {
+        flex-direction: row;
+        height: 160px;
+        justify-content: space-evenly;
+    }
+    @include laptop {
+        height: 100px;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .nav-logo {
+        height: 77px;
+        display: flex;
         align-items: center;
-        .nav-logo {
-            display: block;
+        @include tablet {
+            height: 160px;
         }
-        ul {
-            margin: 0;
-            height: 100%;
-            padding-left: 0;
-            display: flex;
-            .nav-link {
-                background-color: $color-Neutral-800;
+        @include laptop {
+            height: 75px;
+        }
+        .logo-link {
+            width: 100%;
+            #Logotipo-nav {
+                width: 50%;
+                max-width: 220px;
+                margin: 1em auto;
+                filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
                 display: block;
-                padding: 1.5rem;
-                width: 114px;
-                text-transform: uppercase;
-                font-size: $fs-100;
-            }
-            .nav-link:link {
-                color: $color-White;
-                font-size: $fs-200;
-                line-height: 2.4rem;
-                text-decoration: none;
                 text-align: center;
-                // border-bottom: 0.2rem solid $color-Accent;
+                @include tablet {
+                    min-width: 250px;
+                    max-width: 383px;
+                }
+                
+                #C {
+                        fill: $color-Neutral-100;
+                        transition: fill 0.5s;
+                }
+                #A {
+                        fill: $color-Accent;
+                        transition: fill 0.5s;
+                }
+                #V {
+                        fill: $color-Accent;
+                        transition: fill 0.5s;
+                }
+                #D {
+                        fill: $color-Neutral-100;
+                        transition: fill 0.5s;
+                }
             }
-            .nav-link:visited {
-                color: $color-Neutral-200;
-            }
-            .nav-link:hover,
-            .nav-link:focus {
-                box-shadow: $box-shadow-1;
-                -webkit-box-shadow: $box-shadow-1;
-                -moz-box-shadow: $box-shadow-1;
-                color: $color-Accent;
-                transform: scale(1.05);
-            }
-            .nav-link:active {
-                color: $color-Primary;
-                transform: scale(1.05);
-            }
-            .current {
-                background-color: $color-Neutral-900;
-                border-bottom: 0.2rem solid $color-Accent;
-                cursor: not-allowed;
+            #Logotipo-nav:hover {
+                filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.3));
+                #C {
+                        fill: $color-Accent-900;
+                }
+                #A {
+                        fill: $color-Neutral-200;
+    
+                }
+                #V {
+                        fill: $color-Neutral-200;
+    
+                }
+                #D {
+                        fill: $color-Accent-900;
+    
+                }
             }
         }
     }
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        font-family: $ff-Secondary; 
+        font-weight: $fw-Bold;
+        
+        @include tablet {
+            width: 50%;
+        }
+        @include laptop {
+            width: 100%;
+            flex-direction: row;
+            vertical-align: middle;
+        }
+        .nav-link {
+            font-size: $fs-120;
+            font-size: $fs-100;
+            background-color: hsla(0, 0, 0, 0.15);
+            text-transform: uppercase;
+            line-height: 1;
+            padding: 0.5em 0;
+            transition: transform 0.5s;
+            width: 100%;
+            margin: auto 0;
+            text-align: center;
+            @include tablet {
+                background-color: hsla(0, 0, 0, 0.05);
+            }
+            @include laptop {
+                height: max-content;
+            }
+        }
+        .nav-link:link {
+            color: $color-White;
+            line-height: 1;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 0.2rem solid $color-Accent;
+        }
+        .nav-link:visited {
+            color: $color-Neutral-100;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+            box-shadow: $box-shadow-1;
+            -webkit-box-shadow: $box-shadow-1;
+            -moz-box-shadow: $box-shadow-1;
+            color: $color-Accent;
+            transform: scale(1.05);
+        }
+        .nav-link:active {
+            color: $color-Primary;
+            transform: scale(1.05);
+        }
+        .current {
+            background-color: hsla(0, 0, 0, 0.15);
+            border-bottom: 0.2rem solid $color-Accent;
+            cursor: not-allowed;
+        }
+        
+    }
+}
+button {
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+    color: $color-Accent;
+}
+.menu-enter {
+    transform: scale(0);
+    display: none;
+}
+.menu-enter-active {
+  transform: scale(1);
+  transition: display 300ms, transform 300ms;
+  display: flex;
+}
+.menu-exit {
+  display: flex;
+  transform: scale(1);
+}
+.menu-exit-active {
+  display: none;
+  transform: scale(0);
+  transition: display 300ms, transform 300ms;
 }

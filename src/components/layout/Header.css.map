@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,QAAQ;CAWnB;;AAZD,AAGI,OAHG,CAGH,aAAa,CAAC;EACV,KAAK,ECaC,KAAgB;CDZzB;;AALL,AAMI,OANG,CAMH,gBAAgB,CAAA;EACZ,KAAK,ECSE,OAAkB;CDL5B;;AAXL,AAQQ,OARD,CAMH,gBAAgB,CAEZ,SAAS,CAAC;EACN,KAAK,ECQH,KAAgB;CDPrB",
+    "sources": [
+        "Header.scss",
+        "../sass/Variables.scss"
+    ],
+    "names": [],
+    "file": "Header.css"
+}
