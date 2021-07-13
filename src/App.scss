@@ -51,11 +51,11 @@ h4 {
 .app-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url(./components/Images/background.jpg);
+  background-image: url(./images/background/background.jpg);
   background-image: image-set(
-    "./components/Images/background.jpg" type("image/jpg"),
-    "./components/Images/background.webp" type("image/webp"),
-    "./components/Images/background.avif" type("image/avif"),
+    "./images/background/background.jpg" type("image/jpg"),
+    "./images/background/background.webp" type("image/webp"),
+    "./images/background/background.avif" type("image/avif"),
     );
     background-repeat: no-repeat;
     background-position: center;

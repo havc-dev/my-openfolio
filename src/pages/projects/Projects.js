@@ -1,3 +1,5 @@
+import Slider from "react-slick";
+
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import Button from "../../components/Button/Button";
 import NavBar from '../../components/NavBar/NavBar';
@@ -10,12 +12,22 @@ const Projects = (props) => {
     const { info } = props;
     const { title, projects, button } = info;
     const { className, icon, btn_text, type} = button;
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
+    
     return (
         <div className="projects-wrapper">
             <NavBar />
             <main className="projects">
                 <Header title={title} />
-
+                <Slider {...settings}>
                 {projects.map((project) =>
                     <ProjectCard
                         key={project.project_title}
@@ -27,7 +39,7 @@ const Projects = (props) => {
                         live_link={project.live_link}
                     />
                 )}
-
+                </Slider>
             </main>
             <Button 
                 className={className}

@@ -29,6 +29,9 @@
         @include tablet {
             height: 160px;
         }
+        @include laptop {
+            height: 75px;
+        }
         .logo-link {
             width: 100%;
             #Logotipo-nav {
@@ -109,6 +112,9 @@
             text-align: center;
             @include tablet {
                 background-color: hsla(0, 0, 0, 0.05);
+            }
+            @include laptop {
+                height: max-content;
             }
         }
         .nav-link:link {

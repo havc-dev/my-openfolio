@@ -6,15 +6,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
   height: 70px;
-  width: 125px;
+  width: 120px;
 }
 
 .skill-wrapper .skill-icon {
@@ -26,7 +25,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding: 0.5em;
+  padding: 0.25em;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -36,5 +35,9 @@
 .skill-wrapper .skill-icon:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.skill-wrapper h4 {
+  font-size: 1em;
 }
 /*# sourceMappingURL=Skill.css.map */

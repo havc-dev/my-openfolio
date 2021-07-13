@@ -14,13 +14,13 @@ const NavBar = () => {
                     <a href='/' className="logo-link">
                         <Logo id="nav"/>
                     </a>
+            </div>
                 <button  onClick={ () => setIsHidden(!isHidden)} 
                     className='menu'
                     >
                     <i className="fas fa-bars fa-2x" ></i>
                 </button>
-            </div>
-            <nav className={isHidden ? "nav-links menu-enter menu-enter-active" : "nav-links menu-exit menu-exit-active" }>
+            <nav className={!isHidden ? "nav-links menu-enter menu-enter-active" : "nav-links menu-exit menu-exit-active" }>
                 <NavLink activeClassName="current" className='nav-link' to="/" exact={true}>
                     Home
                 </NavLink>

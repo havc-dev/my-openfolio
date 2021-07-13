@@ -8,18 +8,19 @@
     height: 100%;
     border-radius: $border-Radius;
     box-shadow: $box-shadow-1;
-    overflow-y: scroll;
+    overflow: scroll;
     h2 {
         color: $color-Accent;
         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
         text-align: center;
+        margin: 1em;
     }
     .project-info{
         display: flex;
         flex-direction: column;
         border-radius: $border-Radius;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 0 1em;
         width: 90%;
         @include tablet {
             width: 420px;
@@ -36,8 +37,8 @@
         .project-imgbtns {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 300px;
+            // justify-content: space-between;
+            // min-height: 300px;
             img {
                 width: 100%;
                 margin: 0 auto;
@@ -58,9 +59,52 @@
             .project-links {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
-                justify-content: space-around;
-                
+                margin: 0 auto;
+                .link-github {
+                    background-color: $color-Accent;
+                    font-family: $ff-Secondary;
+                    font-weight: $fw-Bold;
+                    color: $color-White;
+                    border: none;
+                    border-radius: $border-Radius;
+                    padding: $button-Padding;
+                    box-shadow: $box-shadow-2;
+                    margin: 1em auto;
+                    text-align: center;
+                    transition: transform 0.5s;
+                    i {
+                            margin-right: 10px;
+                    }
+                }
+                .link-github:hover {
+                    background-color: $color-Accent;
+                    color: $color-Neutral-900;
+                    transform: scale(1.1);
+                    
+                }
+
+                .link-live {
+                    background-color: $color-Accent;
+                    font-family: $ff-Secondary;
+                    font-weight: $fw-Bold;
+                    color: $color-White;
+                    border: none;
+                    border-radius: $border-Radius;
+                    padding: $button-Padding;
+                    box-shadow: $box-shadow-2;
+                    margin: 1em auto;
+                    text-align: center;
+                    transition: transform 0.5s;
+                    i {
+                            margin-right: 10px;
+                    }
+                }
+                .link-live:hover {
+                    background-color: $color-Accent;
+                    color: $color-Neutral-900;
+                    transform: scale(1.1);
+                    
+                }
                 @include tablet {
                     flex-direction: row;
                     :first-child {
@@ -80,7 +124,6 @@
             flex-direction: column;
             margin: 0 auto;
             height: 400px;
-            
         }
     }
 }

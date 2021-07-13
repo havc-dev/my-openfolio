@@ -13,7 +13,7 @@
   border-radius: 5px;
   -webkit-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
           box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .project-card h2 {
@@ -21,6 +21,7 @@
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
   text-align: center;
+  margin: 1em;
 }
 
 .project-card .project-info {
@@ -35,7 +36,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 1em;
   width: 90%;
 }
 
@@ -77,10 +78,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 300px;
 }
 
 .project-card .project-info .project-imgbtns img {
@@ -119,9 +116,65 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.project-card .project-info .project-imgbtns .project-links .link-github {
+  background-color: #ff2b00;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  -webkit-box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+          box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+  margin: 1em auto;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.project-card .project-info .project-imgbtns .project-links .link-github i {
+  margin-right: 10px;
+}
+
+.project-card .project-info .project-imgbtns .project-links .link-github:hover {
+  background-color: #ff2b00;
+  color: #0d0d0d;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.project-card .project-info .project-imgbtns .project-links .link-live {
+  background-color: #ff2b00;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  -webkit-box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+          box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+  margin: 1em auto;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.project-card .project-info .project-imgbtns .project-links .link-live i {
+  margin-right: 10px;
+}
+
+.project-card .project-info .project-imgbtns .project-links .link-live:hover {
+  background-color: #ff2b00;
+  color: #0d0d0d;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media only screen and (min-width: 600px) {

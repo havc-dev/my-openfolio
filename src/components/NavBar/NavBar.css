@@ -56,6 +56,12 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .nav-bar .nav-logo {
+    height: 75px;
+  }
+}
+
 .nav-bar .nav-logo .logo-link {
   width: 100%;
 }
@@ -168,6 +174,14 @@
 @media only screen and (min-width: 600px) {
   .nav-bar .nav-links .nav-link {
     background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-bar .nav-links .nav-link {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 

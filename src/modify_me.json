@@ -67,6 +67,14 @@
                         "webp": "portfolio.webp",
                         "png":  "portfolio.png",
                         "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio: imagine its another picture",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
                     }
                 ],
                 "used_tools": [
@@ -97,13 +105,77 @@
                     }
                 ],
                 "github_link": {
-                    "className": "link",
+                    "className": "github",
                     "icon":"fab fa-github fa-fw fa-lg",
                     "btn_text": "See in GitHub!",
                     "href": "https://github.com/havc-dev/my-openfolio"
                 },
                 "live_link": {
-                    "className": "link",
+                    "className": "live",
+                    "icon":"fab fa-firefox-browser fa-fw fa-lg",
+                    "btn_text": "Live!",
+                    "href": "https://github.com/havc-dev/my-openfolio"
+                }
+            },
+            {
+                "project_title": "BarberiApp",
+                "description": {
+                    "p1": "This project was done in my first week of learning.",
+                    "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
+                },
+                "images": [
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio home page",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio: imagine its another picture",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    }
+                ],
+                "used_tools": [
+                    {
+                    "index": 0,
+                    "tool": "HTML5",
+                    "icon": "fab fa-html5 fa-fw fa-lg"
+                    },
+                    {
+                    "index": 1,
+                    "tool": "CSS",
+                    "icon": "fab fa-css3-alt fa-fw fa-lg"
+                    },
+                    {
+                    "index": 2,
+                    "tool": "JavaScript",
+                    "icon": "fab fa-js fa-fw fa-lg"
+                    },
+                    {
+                    "index": 3,
+                    "tool": "Sass",
+                    "icon": "fab fa-sass fa-fw fa-lg"
+                    },
+                    {
+                    "index": 4,
+                    "tool": "React JS",
+                    "icon": "fab fa-react fa-fw fa-lg"
+                    }
+                ],
+                "github_link": {
+                    "className": "github",
+                    "icon":"fab fa-github fa-fw fa-lg",
+                    "btn_text": "See in GitHub!",
+                    "href": "https://github.com/havc-dev/my-openfolio"
+                },
+                "live_link": {
+                    "className": "live",
                     "icon":"fab fa-firefox-browser fa-fw fa-lg",
                     "btn_text": "Live!",
                     "href": "https://github.com/havc-dev/my-openfolio"
