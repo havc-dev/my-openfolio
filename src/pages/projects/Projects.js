@@ -26,7 +26,8 @@ const Projects = (props) => {
         <div className="projects-wrapper">
             <NavBar />
             <main className="projects">
-                <Header title={title} />
+                <Header title={title}/>
+                <p>*Swipe left or right to navigate through projects</p>
                 <Slider {...settings}>
                 {projects.map((project) =>
                     <ProjectCard
