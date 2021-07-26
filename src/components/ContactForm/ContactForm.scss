@@ -1,8 +1,7 @@
 @import '../../components/sass/Variables.scss';
 
 .contact-title{
-    margin: 1em auto;
-    font-size: $fs-140;
+    margin: 1rem auto;
 }
 
 .contact-form {
@@ -31,36 +30,36 @@
 
 label {
     color: $color-Accent;
-    margin-top: 1em;
-    margin-left: 1em;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 input {
     width: 90%;
     margin: 0 auto;
 }
 input[type=text] {
-    height: 2em;
+    height: 2rem;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
     border: 2px solid $invisible;
 }
 input[type=text]:focus {
-    height: 2em;
+    height: 2rem;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
     border: 2px solid $color-Accent-900;
 }
 input[type=email] {
-    height: 2em;
+    height: 2rem;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
     border: 2px solid $invisible;
 }
 input[type=email]:focus {
-    height: 2em;
+    height: 2rem;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
@@ -71,7 +70,7 @@ textarea {
     outline: $form-outline;
     width: 90%;
     height: 150px;
-    padding: 1em 1.5em;
+    padding: 1rem;
     box-sizing: border-box;
     border: 2px solid $invisible;
     background-color: hsla(0, 0, 0, 0.25);
@@ -83,7 +82,7 @@ textarea:focus {
     outline: $form-outline;
     width: 90%;
     height: 150px;
-    padding: 1em 1.5em;
+    padding: 1rem;
     box-sizing: border-box;
     border: 2px solid $color-Accent-900;
     background-color: hsla(0, 0, 0, 0.25);
