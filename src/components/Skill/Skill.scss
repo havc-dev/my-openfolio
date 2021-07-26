@@ -7,20 +7,20 @@
     margin: 0 auto;
     align-self: center;
     justify-self: center;
-    height: 70px;
-    width: 120px;
+    width: 90px;
+    transition: transform 0.5s;
     .skill-icon {
         color: $color-Accent;
         display: flex;
         justify-content: center;
         margin: 0 auto;
         padding: 0.25em;
-        transition: transform 0.5s;
     }
-    .skill-icon:hover {
-        transform: scale(1.1);
-    }
+    
     h4 {
-        font-size: $fs-100;
+        font-size: $fs-10;
     }
+}
+.skill-wrapper:hover {
+    transform: scale(1.1);
 }

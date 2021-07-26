@@ -1,10 +1,9 @@
-import MyStack from "../../components/MyStack/MyStack";
 
-import './About.css'
-import NavBar from '../../components/NavBar/NavBar';
 import Header from "../../components/layout/Header";
+import MyStack from "../../components/MyStack/MyStack";
 import Button from "../../components/Button/Button";
 
+import './About.css'
 
 const About = (props) => {
   
@@ -13,10 +12,11 @@ const About = (props) => {
   const { className, icon, btn_text, type} = button;
 
   return (
-    <div className="about-wrapper">
-      <NavBar />
+    <div className="page-wrapper">
       <main className="about">
-        <Header title={title} subtitle={subtitle} location={location}/>
+        <div className="header">
+          <Header title={title} subtitle={subtitle} location={location}/>
+        </div>
         <div className="text">
           <p className="text-p">{aboutMeP1}</p>
           <br />

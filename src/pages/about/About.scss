@@ -1,60 +1,21 @@
 @import '../../components/sass/Variables.scss';
 @import '../../components/sass/Mixins.scss';
 
-.about-wrapper {
+.about {
+    height: 100%;
+    width: 90%;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    .about {
-        width: 90%;
-        height: 90%;
-        margin: 2em auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
-        
-        @include tablet {
-            max-width: 600px;
-        }
-        .header {
-            margin-top: 1em;
-            line-height: 1.5;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            text-align: center;
-            .header-title {
-                color: $color-White;
-                font-size: $fs-200;
-            }
-            .header-subtitle {
-                margin-top: 1em;
-                color: $color-Accent;
-                text-align: end;
-                font-size: $fs-160;
-                .subtitle-location {
-                    color: $color-White;
-                }
-            }
-        }
-    
-        .text {
-            width: 85%;
-            line-height: 1.5;
-            margin-top: 2em;
-            .text-p {
-                font-family: $ff-Primary;
-            }
-        }
-
-        .stack {
-            margin: 2.5em auto;
-            height: 100%;
-        }
+    justify-content: space-between;
+    margin: 0 auto;
+    .header {
+        margin: 2rem 0;
     }
-
+    .text {
+        width: 100%;
+        line-height: 2;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
 }
-

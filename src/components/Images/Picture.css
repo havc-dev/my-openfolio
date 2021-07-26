@@ -1,4 +1,5 @@
-.project-pictures {
-  width: 250px;
+img {
+  max-width: 220px;
+  max-height: 150px;
 }
 /*# sourceMappingURL=Picture.css.map */

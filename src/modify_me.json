@@ -1,21 +1,26 @@
 {
+    "navbar": {
+        "logo": {
+            "div":"Adrián",
+            "span":"Curiel"
+        }
+    },
     "home": {
-        "title": "Adrián Velázquez",
-        "sub_title": "Front End Developer",
-        "text": "I'm a self-taught Front End Developer who likes CSS and the customization posibilities it offers",
+        "title": "Welcome",
+        "sub_title": "I'm Adrián Curiel",
+        "text": "I'm a self-taught Front End Developer who likes CSS and the customization posibilities it offers, this portfolio is ment to help backend developers build a nice portfolio",
         "button": {
-            "className": "cta",
             "icon":"fas fa-handshake fa-fw fa-lg",
-            "btn_text": "Lets Work Together!",
+            "btn_text": "Contact!",
             "type": "button"
         }
     },
     "about": {
         "title": "About Me",
-        "subtitle": "I'm a Front End Developer",
-        "location": "living in Cancún, Mx",
-        "aboutMeP1": "I really enjoy to keep my mind bussy learning new things, learning can be blessing and a curse, you can get lost but thankfully a good friend introduced me to programming and now I can say learning is nothing but a blessing!",
-        "aboutMeP2": "I want to constantly improve my Front End skills. Also I like the idea of being able of develop the whole projects I have in mind learning Back End in the future",
+        "subtitle": "I always loved to learn!",
+        "location": "Currently based In Cancún, Mx",
+        "aboutMeP1": "I really enjoy to keep my mind bussy learning new things, a good friend introduced me to programming and now I can say I found my happy place",
+        "aboutMeP2": "I want to constantly improve my Front End skills. I Also like the idea of being able to develop my own projects so I have in mind learning Back End in the future",
         "stack": [
             {
             "index": 0,
@@ -44,9 +49,8 @@
             }
         ],
         "button": {
-            "className": "cta",
             "icon":"fas fa-handshake fa-fw fa-lg",
-            "btn_text": "Lets Work Together!",
+            "btn_text": "Contact!",
             "type": "button"
         }
     },
@@ -61,16 +65,32 @@
                 },
                 "images": [
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio home page",
+                        "title": "openfolio home",
+                        "description": "Home page",
                         "avif": "portfolio.avif",
                         "webp": "portfolio.webp",
                         "png":  "portfolio.png",
                         "jpg":  "portfolio.jpg"
                     },
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio: imagine its another picture",
+                        "title": "openfolio about",
+                        "description": "About page",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "openfolio projects",
+                        "description": "Projects page",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "openfolio contact",
+                        "description": "Contact form",
                         "avif": "portfolio.avif",
                         "webp": "portfolio.webp",
                         "png":  "portfolio.png",
@@ -104,21 +124,23 @@
                     "icon": "fab fa-react fa-fw fa-lg"
                     }
                 ],
-                "github_link": {
-                    "className": "github",
-                    "icon":"fab fa-github fa-fw fa-lg",
-                    "btn_text": "See in GitHub!",
-                    "href": "https://github.com/havc-dev/my-openfolio"
-                },
-                "live_link": {
-                    "className": "live",
-                    "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                    "btn_text": "Live!",
-                    "href": "https://github.com/havc-dev/my-openfolio"
+                "links": {
+                    "github_link": {
+                        "className": "github",
+                        "icon":"fab fa-github fa-fw fa-lg",
+                        "btn_text": "GitHub!",
+                        "href": "https://github.com/havc-dev/my-openfolio"
+                    },
+                    "live_link": {
+                        "className": "live",
+                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
+                        "btn_text": "Live!",
+                        "href": "/"
+                    }
                 }
             },
             {
-                "project_title": "BarberiApp",
+                "project_title": "CARculator",
                 "description": {
                     "p1": "This project was done in my first week of learning.",
                     "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
@@ -139,6 +161,14 @@
                         "webp": "portfolio.webp",
                         "png":  "portfolio.png",
                         "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio: imagine its another PICTURE",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
                     }
                 ],
                 "used_tools": [
@@ -168,24 +198,99 @@
                     "icon": "fab fa-react fa-fw fa-lg"
                     }
                 ],
-                "github_link": {
-                    "className": "github",
-                    "icon":"fab fa-github fa-fw fa-lg",
-                    "btn_text": "See in GitHub!",
-                    "href": "https://github.com/havc-dev/my-openfolio"
+                "links": {
+                    "github_link": {
+                        "className": "github",
+                        "icon":"fab fa-github fa-fw fa-lg",
+                        "btn_text": "GitHub!",
+                        "href": "https://github.com/havc-dev/my-openfolio"
+                    },
+                    "live_link": {
+                        "className": "live",
+                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
+                        "btn_text": "Live!",
+                        "href": "/"
+                    }
+                }
+            },
+            {
+                "project_title": "GASOLINAPP",
+                "description": {
+                    "p1": "This project was done in my first week of learning.",
+                    "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
                 },
-                "live_link": {
-                    "className": "live",
-                    "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                    "btn_text": "Live!",
-                    "href": "https://github.com/havc-dev/my-openfolio"
+                "images": [
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio home page",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio: imagine its another picture",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    },
+                    {
+                        "title": "my_portfolio",
+                        "description": "Openfolio: imagine its another PICTURE",
+                        "avif": "portfolio.avif",
+                        "webp": "portfolio.webp",
+                        "png":  "portfolio.png",
+                        "jpg":  "portfolio.jpg"
+                    }
+                ],
+                "used_tools": [
+                    {
+                    "index": 0,
+                    "tool": "HTML5",
+                    "icon": "fab fa-html5 fa-fw fa-lg"
+                    },
+                    {
+                    "index": 1,
+                    "tool": "CSS",
+                    "icon": "fab fa-css3-alt fa-fw fa-lg"
+                    },
+                    {
+                    "index": 2,
+                    "tool": "JavaScript",
+                    "icon": "fab fa-js fa-fw fa-lg"
+                    },
+                    {
+                    "index": 3,
+                    "tool": "Sass",
+                    "icon": "fab fa-sass fa-fw fa-lg"
+                    },
+                    {
+                    "index": 4,
+                    "tool": "React JS",
+                    "icon": "fab fa-react fa-fw fa-lg"
+                    }
+                ],
+                "links": {
+                    "github_link": {
+                        "className": "github",
+                        "icon":"fab fa-github fa-fw fa-lg",
+                        "btn_text": "GitHub!",
+                        "href": "https://github.com/havc-dev/my-openfolio"
+                    },
+                    "live_link": {
+                        "className": "live",
+                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
+                        "btn_text": "Live!",
+                        "href": "/"
+                    }
                 }
             }
         ],
         "button": {
-            "className": "cta",
             "icon":"fas fa-handshake fa-fw fa-lg",
-            "btn_text": "Lets Work Together!",
+            "btn_text": "Contact!",
             "type": "button"
         }
     },
@@ -212,7 +317,6 @@
             "name": "message"
         },
         "button": {
-            "className": "cta",
             "icon":"fas fa-envelope fa-fw fa-lg",
             "btn_text": "Send e-Mail",
             "type": "submit"

@@ -1,7 +1,6 @@
 import ContactForm from '../../components/ContactForm/ContactForm';
 
 import './Contact.css';
-import NavBar from '../../components/NavBar/NavBar';
 
 const Contact = (props) => {
 
@@ -9,8 +8,7 @@ const Contact = (props) => {
     const { title, my_email, input_fields, text_area, button } = info;
 
     return (
-        <div className="contact-wrapper">
-            <NavBar />
+        <div className="page-wrapper">
             <main className="contact">
                 <ContactForm 
                     my_email={my_email}
