@@ -27,7 +27,8 @@
         color: $color-Neutral-900;
         transform: scale(1.1);
 }
-.btn-menu {
+
+.btn-alt {
         background-color: $color-Accent;
         font-family: $ff-Secondary;
         font-weight: $fw-Bold;
@@ -36,15 +37,16 @@
         border-radius: $border-Radius;
         padding: $button-Padding;
         box-shadow: $box-shadow-2;
-        width: 10%;
-        margin: 0 auto;
+        margin: 2rem auto;
         display: inline-block;
         transition: transform 0.5s;
         
-        @include tablet {
-                max-width: 50%;
-        }
         i {
-                margin-right: 10px;
+                margin-right: 2rem;
         }
+}
+.btn-alt:hover {
+        background-color: $color-Accent;
+        color: $color-Neutral-900;
+        transform: scale(1.1);
 }
