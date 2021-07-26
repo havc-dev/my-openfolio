@@ -1,31 +1,35 @@
 @import './components/sass/Variables.scss';
 @import './components/sass/Mixins.scss';
 
+body {
+  color: $color-White;
+  height: 100vh;
+  width: 100vw;
+  font-size: 62.5%;
+  font-family: $ff-Primary;
+  box-sizing: border-box;
+  @include tablet {
+    font-size: $fs-10;
+  }
+  @include laptop {
+    font-size: $fs-10;
+  }
+  @include desktop {
+    font-size: $fs-10;
+  }
+  @include uhd {
+    font-size: $fs-10;
+  }
+}
 body, p, a, ul, li {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  line-height: 1;
+  color: $color-White;
 }
 li {
   list-style-type: none;
-}
-body {
-  color: $color-White;
-  overflow-x: hidden;
-  height: 100vh;
-  font-size: $fs-100;
-  @include tablet {
-    font-size: $fs-110;
-  }
-  @include laptop {
-    font-size: $fs-100;
-  }
-  @include desktop {
-    font-size: $fs-130;
-  }
-  @include uhd {
-    font-size: $fs-140;
-  }
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $ff-Display;
@@ -33,20 +37,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 h1 {
-  font-size: $fs-180;
+  font-size: $fs-24;
 }
 h2 {
-  font-size: $fs-160;
+  font-size: $fs-20;
+  color: $color-Accent;
 }
 h3 {
-  font-size: $fs-140;
+  font-size: $fs-16;
 }
 h4 {
-  font-size: $fs-120;
+  font-size: $fs-12;
 }
 #root {
   height: 100%;
   width: 100%;
+  display: block;
 }
 .app-wrapper {
   height: 100%;
@@ -59,16 +65,28 @@ h4 {
     );
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.bg-overlay {
-  background-color: rgba(0, 0, 0, 0.65);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+// .bg-overlay {
+//   background-color: rgba(0, 0, 0, 0.45);
+//   position: center;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   mix-blend-mode: overlay;
+// }
+
+
+.page-wrapper {
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsla(0, 0, 0, 0.45);
 }
-
-
