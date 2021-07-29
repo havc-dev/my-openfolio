@@ -1,30 +1,30 @@
 @import '../sass/Variables.scss';
 @import '../sass/Mixins.scss';
 
-.description {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    @include tablet {
-        max-width: 550px;
-    }
-    .description-title {
-        width: 100%;
-        color: $color-Accent;
-        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
-        margin: 0.5em auto;
-        font-size: $fs-100;
-    }
-    .description-text {
-        width: 95%;
-        text-align: left;
-        color: $color-White;
-        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
-        display: flex;
-        flex-direction: column;
-        p {
-            margin: 0.5em auto;
-        }
-    }
-}
+// .description {
+//     margin: 0 auto;
+//     display: flex;
+//     flex-direction: column;
+//     width: 95%;
+//     @include tablet {
+//         max-width: 550px;
+//     }
+//     .description-title {
+//         width: 100%;
+//         color: $color-Accent;
+//         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+//         margin: 0.5em auto;
+//         font-size: $fs-100;
+//     }
+//     .description-text {
+//         width: 95%;
+//         text-align: left;
+//         color: $color-White;
+//         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+//         display: flex;
+//         flex-direction: column;
+//         p {
+//             margin: 0.5em auto;
+//         }
+//     }
+// }

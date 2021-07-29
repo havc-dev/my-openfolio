@@ -1,42 +1,47 @@
-body, p, a, ul, li {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
 body {
   color: white;
-  overflow-x: hidden;
   height: 100vh;
-  font-size: 1em;
+  width: 100vw;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media only screen and (min-width: 600px) {
   body {
-    font-size: 1.1em;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   body {
-    font-size: 1.3em;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (min-width: 1921px) {
   body {
-    font-size: 1.4em;
+    font-size: 1rem;
   }
+}
+
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  line-height: 1;
+  color: white;
+}
+
+li {
+  list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,43 +51,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 2rem;
+  color: #ff2b00;
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 #root {
   height: 100%;
   width: 100%;
+  display: block;
 }
 
 .app-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url(./images/background/background.jpg);
-  background-image: -webkit-image-set("./images/background/background.jpg" type("image/jpg"), "./images/background/background.webp" type("image/webp"), "./images/background/background.avif" type("image/avif"));
-  background-image: image-set("./images/background/background.jpg" type("image/jpg"), "./images/background/background.webp" type("image/webp"), "./images/background/background.avif" type("image/avif"));
+  background-image: url("/src/assets/img/background.jpg");
+  background-image: -webkit-image-set("/src/assets/img/background.jpg" type("image/jpg"), "/src/assets/img/background.webp" type("image/webp"));
+  background-image: image-set("/src/assets/img/background.jpg" type("image/jpg"), "/src/assets/img/background.webp" type("image/webp"));
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.bg-overlay {
-  background-color: rgba(0, 0, 0, 0.65);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.page-wrapper {
   height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.45);
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

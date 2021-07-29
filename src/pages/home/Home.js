@@ -1,6 +1,5 @@
 
 import './Home.css'
-import NavBar from '../../components/NavBar/NavBar';
 import Header from '../../components/layout/Header';
 import Button from '../../components/Button/Button';
 
@@ -8,18 +7,18 @@ const Home = (props) => {
 
     const { info } = props;
     const { title, sub_title, text, button } = info;
-    const { className, icon, btn_text, type} = button;
+    const {  icon, btn_text, type} = button;
     
     return (
-        <div className="home-wrapper">
-            <NavBar />
+        <div className="page-wrapper">
             <main className="home">
-                <Header title={title} subtitle={sub_title} />
+                <div className="header">
+                    <Header title={title} subtitle={sub_title} />
+                </div>
                 <div className="text">
-                    <h3>{text}</h3>
+                    <h4>{text}</h4>
                 </div>
                 <Button
-                    className={className}
                     icon={icon}
                     btn_text={btn_text}
                     type={type}

@@ -10,7 +10,7 @@ const UsedTools = (props) => {
         
         <div className="used-tools">
             <div className="used-tools-title">
-                <h3>Tools used:</h3>
+                <h4>Tools used:</h4>
             </div>
             <div className="used-tools-list">
                 {tools.map((skill) =>
