@@ -76,9 +76,8 @@ h4 {
 .app-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url("/src/assets/img/background.jpg");
-  background-image: -webkit-image-set("/src/assets/img/background.jpg" type("image/jpg"), "/src/assets/img/background.webp" type("image/webp"));
-  background-image: image-set("/src/assets/img/background.jpg" type("image/jpg"), "/src/assets/img/background.webp" type("image/webp"));
+  background-image: url("./images/img/background.jpg");
+  background-image: url("./images/background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -109,4 +108,4 @@ h4 {
           justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.45);
 }
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=App.css.map */

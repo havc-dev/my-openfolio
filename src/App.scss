@@ -57,17 +57,14 @@ h4 {
 .app-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url("/src/assets/img/background.jpg");
-  background-image: image-set(
-    "/src/assets/img/background.jpg" type("image/jpg"),
-    "/src/assets/img/background.webp" type("image/webp")
-    );
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-image: url('./images/img/background.jpg');
+  background-image:url('./images/background.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 // .bg-overlay {
