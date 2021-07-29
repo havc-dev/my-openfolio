@@ -7,14 +7,14 @@ const webp = require('gulp-webp');
 function imagesMinify() {
     return src('src/assets/**/*')
         .pipe( imagemin() )
-        .pipe( dest('public/assets/img') )
+        .pipe( dest('src/images') )
         .pipe( notify({ message: 'Minified jpg image'}) )
 }
 
 function versionWebp() {
     return src('public/assets/img/**/*')
         .pipe( webp() )
-        .pipe( dest('public/assets/img'))
+        .pipe( dest('src/images'))
         .pipe( notify({ message: 'Webp version ready'}))
 }
 
