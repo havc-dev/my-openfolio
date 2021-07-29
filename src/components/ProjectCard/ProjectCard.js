@@ -29,15 +29,13 @@ import './ProjectCard.css'
                 <div className="project-imgbtns">
                     <div id="pictures-carousel" className="project-images-carousel">
                         <Slider {...sliderSettings}>
-                        {images.map((picture) =>
+                        {images.map((image) =>
                             <Picture
-                                key={picture.title}
-                                title={picture.title}
-                                description={picture.description}
-                                avif={picture.avif}
-                                webp={picture.webp}
-                                png={picture.png}
-                                jpg={picture.jpg}
+                                key={image.title}
+                                title={image.title}
+                                description={image.description}
+                                webp={image.webp}
+                                jpg={image.jpg}
                             />
                         )}
                         </Slider>

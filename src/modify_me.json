@@ -67,34 +67,26 @@
                     {
                         "title": "openfolio home",
                         "description": "Home page",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "webp": "openfolio-home-m.webp",
+                        "jpg":  "openfolio-home-m.jpg"
                     },
                     {
                         "title": "openfolio about",
                         "description": "About page",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "webp": "openfolio-about-m.webp",
+                        "jpg":  "openfolio-about-m.jpg"
                     },
                     {
                         "title": "openfolio projects",
                         "description": "Projects page",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "webp": "openfolio-projects-m.webp",
+                        "jpg":  "openfolio-projects-m.jpg"
                     },
                     {
                         "title": "openfolio contact",
                         "description": "Contact form",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "webp": "openfolio-contact-m.webp",
+                        "jpg":  "openfolio-contact-m.jpg"
                     }
                 ],
                 "used_tools": [
@@ -147,28 +139,28 @@
                 },
                 "images": [
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio home page",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "title": "openfolio home",
+                        "description": "Home page",
+                        "webp": "openfolio-home-m.webp",
+                        "jpg":  "openfolio-home-m.jpg"
                     },
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio: imagine its another picture",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "title": "openfolio about",
+                        "description": "About page",
+                        "webp": "openfolio-about-m.webp",
+                        "jpg":  "openfolio-about-m.jpg"
                     },
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio: imagine its another PICTURE",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "title": "openfolio projects",
+                        "description": "Projects page",
+                        "webp": "openfolio-projects-m.webp",
+                        "jpg":  "openfolio-projects-m.jpg"
+                    },
+                    {
+                        "title": "openfolio contact",
+                        "description": "Contact form",
+                        "webp": "openfolio-contact-m.webp",
+                        "jpg":  "openfolio-contact-m.jpg"
                     }
                 ],
                 "used_tools": [
@@ -221,28 +213,28 @@
                 },
                 "images": [
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio home page",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "title": "openfolio home",
+                        "description": "Home page",
+                        "webp": "openfolio-home-m.webp",
+                        "jpg":  "openfolio-home-m.jpg"
                     },
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio: imagine its another picture",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "title": "openfolio about",
+                        "description": "About page",
+                        "webp": "openfolio-about-m.webp",
+                        "jpg":  "openfolio-about-m.jpg"
                     },
                     {
-                        "title": "my_portfolio",
-                        "description": "Openfolio: imagine its another PICTURE",
-                        "avif": "portfolio.avif",
-                        "webp": "portfolio.webp",
-                        "png":  "portfolio.png",
-                        "jpg":  "portfolio.jpg"
+                        "title": "openfolio projects",
+                        "description": "Projects page",
+                        "webp": "openfolio-projects-m.webp",
+                        "jpg":  "openfolio-projects-m.jpg"
+                    },
+                    {
+                        "title": "openfolio contact",
+                        "description": "Contact form",
+                        "webp": "openfolio-contact-m.webp",
+                        "jpg":  "openfolio-contact-m.jpg"
                     }
                 ],
                 "used_tools": [
