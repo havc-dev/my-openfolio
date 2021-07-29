@@ -5,7 +5,7 @@ const webp = require('gulp-webp');
 
 
 function imagesMinify() {
-    return src('src/images/**/*')
+    return src('src/assets/**/*')
         .pipe( imagemin() )
         .pipe( dest('public/assets/img') )
         .pipe( notify({ message: 'Minified jpg image'}) )
