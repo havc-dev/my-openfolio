@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=ProjectInfo.css.map */
+.description {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .description {
+    max-width: 550px;
+  }
+}
+
+.description .description-title {
+  width: 100%;
+  color: #ff2b00;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
+  margin: 0.5em auto;
+  font-size: 2em;
+}
+
+.description .description-container {
+  width: 90%;
+  text-align: left;
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6em;
+}
+
+.description .description-text {
+  margin: 1rem auto;
+}
+/*# sourceMappingURL=ProjectInfo.css.map */

@@ -24,10 +24,10 @@ const About = (props) => {
         </div>
         <MyStack  stack={stack}/>
         <Button
-        className={className}
-        icon={icon}
-        btn_text={btn_text}
-        type={type}
+          className="extra-space"
+          icon={icon}
+          btn_text={btn_text}
+          type={type}
         />
       </main>
     </div>

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 1rem auto;
     align-self: center;
     justify-self: center;
     width: 90px;
@@ -14,11 +14,11 @@
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding: 0.25em;
+        padding: 0.5rem;
     }
     
-    h4 {
-        font-size: $fs-10;
+    .skill-text {
+        font-size: $fs-12;
     }
 }
 .skill-wrapper:hover {

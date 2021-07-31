@@ -1,24 +1,37 @@
 @import './components/sass/Variables.scss';
 @import './components/sass/Mixins.scss';
 
+html {
+  height: 100vh;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 body {
   color: $color-White;
   height: 100vh;
   width: 100vw;
-  font-size: 62.5%;
   font-family: $ff-Primary;
   box-sizing: border-box;
+  background-image: url('./images/img/background.jpg');
+  background-image:url('./images/background.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  font-size: $fs-10;
   @include tablet {
-    font-size: $fs-10;
+    font-size: $fs-12;
   }
   @include laptop {
-    font-size: $fs-10;
+    font-size: $fs-16;
   }
   @include desktop {
-    font-size: $fs-10;
+    font-size: $fs-20;
   }
   @include uhd {
-    font-size: $fs-10;
+    font-size: $fs-24;
   }
 }
 body, p, a, ul, li {
@@ -37,46 +50,47 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 h1 {
-  font-size: $fs-24;
+  font-size: $fs-28;
 }
 h2 {
-  font-size: $fs-20;
+  font-size: $fs-24;
   color: $color-Accent;
 }
 h3 {
-  font-size: $fs-16;
+  font-size: $fs-20;
 }
 h4 {
-  font-size: $fs-12;
+  font-size: $fs-16;
 }
 #root {
   height: 100%;
   width: 100%;
   display: block;
+  position: relative;
+  z-index: 2;
 }
+.bg-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.35);
+  z-index: 1;
+  cursor: pointer;
+}
+
 .app-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url('./images/img/background.jpg');
-  background-image:url('./images/background.webp');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
+  z-index: 2;
 }
-
-// .bg-overlay {
-//   background-color: rgba(0, 0, 0, 0.45);
-//   position: center;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   mix-blend-mode: overlay;
-// }
-
 
 .page-wrapper {
   height: 100%;
@@ -84,5 +98,4 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: hsla(0, 0, 0, 0.45);
 }

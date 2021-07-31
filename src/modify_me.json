@@ -289,6 +289,9 @@
     "contact": {
         "title": "Get in Touch",
         "my_email": "havc.developer@gmail.com",
+        "my_phone": "+52 1 998-385-3719",
+        "my_phone_unformatted": "5219983853719",
+        "my_repo": "https://github.com/havc-dev",
         "input_fields": [
                 {
                     "label": "Your Name",

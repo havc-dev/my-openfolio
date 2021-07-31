@@ -1,74 +1,119 @@
 @import '../sass/Variables.scss';
 @import '../sass/Mixins.scss';
 
-.nav-bar {
+.nav-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: hsla(0,0,0,0.85);
-    .nav-logo {
-        margin: 1em;
-        text-align: center;
-        color: $color-White;
-        .nav-logo-pt2{
-            color: $color-Accent;
-        }
-    }
-    .nav-links {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: hsla(0,0,0,0.75);
+    .nav-bar {
         width: 100%;
-        font-family: $ff-Secondary;
-        font-weight: $fw-Bold;
-        transform: scale(1);
-        transition: display 300ms, transform 300ms;
         display: flex;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        
-        .nav-link {
-
-            font-size: $fs-10;
-            text-transform: uppercase;
-            line-height: 1;
-            padding: 0.5em 0;
-            transition: transform 0.5s;
+        flex-direction: column;
+        margin: 0 auto;
+        @include tablet {
+            width: 90%;
+            max-width: 600px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include laptop {
+            flex-direction: row;
+            width: 85%;
+            max-width: 750px;
+            justify-content: space-between;
+        }
+        @include desktop {
+            width: 75%;
+            justify-content: space-between;
+            flex-direction: row;
+            max-width: 1200px;
+        }
+        @include uhd {
+            width: 66%;
+            justify-content: space-between;
+            flex-direction: row;
+            max-width: 2400px;
+        }
+        .nav-logo {
+            padding: 1rem 0;
+            .nav-logo-pt1 {
+                font-size: $fs-24;
+                margin: 1rem;
+                text-align: center;
+                color: $color-White;
+                .nav-logo-pt2{
+                    color: $color-Accent;
+                }
+                @include tablet {
+                    font-size: $fs-24;
+                    margin: 0.5rem;
+                }
+            }
+        }
+        .nav-links {
             width: 100%;
-            margin: auto 0;
-            text-align: center;
+            font-family: $ff-Secondary;
+            font-weight: $fw-Bold;
+            transform: scale(1);
+            transition: display 300ms, transform 300ms;
+            display: flex;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            @include tablet {
+                width: 60%;
+            }
+            @include laptop {}
+            @include desktop {}
+            .nav-link {
+                font-size: $fs-12;
+                text-transform: uppercase;
+                line-height: 1;
+                padding: 0.5rem 0;
+                transition: transform 0.5s;
+                width: 100%;
+                margin: auto 0;
+                text-align: center;
+                vertical-align: bottom;
+                @include tablet {
+                    font-size: $fs-16;
+                }
+            }
 
-        }
+            .nav-link:link {
+                color: $color-White;
+                line-height: 1;
+                text-decoration: none;
+                text-align: center;
+                // border-bottom: 0.2rem solid $color-White;
+            }
 
-        .nav-link:link {
-            color: $color-White;
-            line-height: 1;
-            text-decoration: none;
-            text-align: center;
-            border-bottom: 0.2rem solid $color-White;
-        }
+            .nav-link:hover,
+            .nav-link:focus {
+                box-shadow: $box-shadow-1;
+                -webkit-box-shadow: $box-shadow-1;
+                -moz-box-shadow: $box-shadow-1;
+                color: $color-Accent;
+                transform: scale(1.05);
+            }
 
-        .nav-link:hover,
-        .nav-link:focus {
-            box-shadow: $box-shadow-1;
-            -webkit-box-shadow: $box-shadow-1;
-            -moz-box-shadow: $box-shadow-1;
-            color: $color-Accent;
-            transform: scale(1.05);
-        }
+            .nav-link:active {
+                color: $color-Primary;
+                transform: scale(1.05);
+            }
 
-        .nav-link:active {
-            color: $color-Primary;
-            transform: scale(1.05);
-        }
+            .current {
+                background-color: hsla(0, 0, 0, 0.15);
+                // border-bottom: 0.2rem solid $color-Accent;
+                cursor: not-allowed;
+                color: $color-Accent;
+            }
 
-        .current {
-            background-color: hsla(0, 0, 0, 0.15);
-            border-bottom: 0.2rem solid $color-Accent;
-            cursor: not-allowed;
         }
 
     }
-
 }
-
 // .nav-bar {
 //     grid-column: 1 / 4;
 //     grid-row: 1 / 3;

@@ -8,7 +8,7 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0 auto;
+  margin: 1rem auto;
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
@@ -28,11 +28,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding: 0.25em;
+  padding: 0.5rem;
 }
 
-.skill-wrapper h4 {
-  font-size: 1rem;
+.skill-wrapper .skill-text {
+  font-size: 1.2em;
 }
 
 .skill-wrapper:hover {

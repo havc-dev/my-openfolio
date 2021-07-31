@@ -1,22 +1,21 @@
 @import '../../components/sass/Variables.scss';
 
-.contact-title{
-    margin: 1rem auto;
-}
-
 .contact-form {
     box-shadow: $box_shadow_1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: $border-Radius;
+    margin-bottom: 5rem;
 
     .form-group {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 1rem 0;
         .col {
             display: flex;
             flex-direction: column;
@@ -32,6 +31,7 @@ label {
     color: $color-Accent;
     margin-top: 1rem;
     margin-left: 1rem;
+    font-size: $fs-16;
 }
 input {
     width: 90%;

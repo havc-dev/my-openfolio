@@ -2,13 +2,13 @@
 
 .header-title {
     color: $color-White;
-    margin: 0 0;
-}
-.header-subtitle{
-    color: $color-Accent;
-    .subtitle-location {
-        color: $color-White;
-        font-size: $fs-10;
-        margin: 0;
+    margin: 2rem 0;
+    .header-subtitle{
+        color: $color-Accent;
+        .span {
+            color: $color-White;
+            font-size: 1em;
+            margin: 2rem 0;
+        }
     }
 }

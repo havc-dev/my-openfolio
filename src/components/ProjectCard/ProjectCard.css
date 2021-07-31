@@ -16,14 +16,14 @@
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-card h4 {
   color: #ff2b00;
-  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
-          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.85));
-  text-align: center;
-  margin: 1rem;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+  margin: 2rem auto;
 }
 
 .project-card .project-info {
@@ -39,7 +39,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .project-card .project-info .project-imgbtns {
@@ -66,14 +66,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 1rem;
+  margin: 3rem 1rem;
 }
 
 .project-card .project-info .project-imgbtns .project-links .link {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   color: #0d0d0d;
   border: none;
   border-radius: 5px;
@@ -108,7 +108,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .project-card .project-info .project-imgbtns .project-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -117,7 +117,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .project-card .project-info .project-imgbtns .project-links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

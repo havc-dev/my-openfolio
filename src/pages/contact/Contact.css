@@ -17,7 +17,33 @@
 
 @media only screen and (min-width: 600px) {
   .contact {
+    width: 90%;
     max-width: 600px;
   }
+}
+
+@media only screen and (min-width: 769px) {
+  .contact {
+    width: 85%;
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact {
+    width: 75%;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .contact {
+    width: 66%;
+    max-width: 2400px;
+  }
+}
+
+.contact .header {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=Contact.css.map */

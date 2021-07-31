@@ -9,6 +9,7 @@ const NavBar = (props) => {
     const { div, span } = logo;
 
     return (
+        <div className="nav-container">
         <div className='nav-bar'>
             <div className='nav-logo'>
                 <h1 className='nav-logo-pt1'>{div}<span className='nav-logo-pt2'>{span}</span></h1>
@@ -27,6 +28,7 @@ const NavBar = (props) => {
                     Contact
                 </NavLink>
             </nav>
+        </div>
         </div>
     )
 }

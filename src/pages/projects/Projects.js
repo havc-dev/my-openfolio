@@ -9,7 +9,7 @@ import './Projects.css';
 const Projects = (props) => {
     const { info } = props;
     const { title, projects, button } = info;
-    const { className, icon, btn_text, type} = button;
+    const { icon, btn_text, type} = button;
 
     var sliderSettings = {
         dots: true,
@@ -42,7 +42,7 @@ const Projects = (props) => {
                     )}
                 </Slider>
                 <Button 
-                    className={className}
+                    className="extra-space"
                     icon={icon}
                     btn_text={btn_text}
                     type={type}

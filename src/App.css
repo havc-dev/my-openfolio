@@ -1,34 +1,48 @@
+html {
+  height: 100vh;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   height: 100vh;
   width: 100vw;
-  font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: url("./images/img/background.jpg");
+  background-image: url("./images/background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 600px) {
   body {
-    font-size: 1rem;
+    font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   body {
-    font-size: 1rem;
+    font-size: 1.6em;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   body {
-    font-size: 1rem;
+    font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 2000px) {
   body {
-    font-size: 1rem;
+    font-size: 2.4em;
   }
 }
 
@@ -51,36 +65,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.8em;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.4em;
   color: #ff2b00;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 2em;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.6em;
 }
 
 #root {
   height: 100%;
   width: 100%;
   display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  cursor: pointer;
 }
 
 .app-wrapper {
   height: 100%;
   width: 100%;
-  background-image: url("./images/img/background.jpg");
-  background-image: url("./images/background.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +115,8 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  z-index: 2;
 }
 
 .page-wrapper {
@@ -106,6 +132,5 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.45);
 }
 /*# sourceMappingURL=App.css.map */
