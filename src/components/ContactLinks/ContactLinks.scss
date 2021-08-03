@@ -11,16 +11,21 @@
         .anchor {
             display: flex;
             flex-direction: column;
-            font-size: 8px;
             justify-content: space-between;
             @include tablet {
-                font-size: $fs-10;
                 flex-direction: row;
             }
+            .anchor-icon {
+                color: $color-Accent;
+                margin: 0 auto;
+            }
+            .anchor-text {
+                display: none;
+                @include tablet {
+                    display: flex;
+                    margin-left: 1rem;
+                }
+            }
         }
-    }
-    .contact-icon {
-        color: $color-Accent;
-        margin: 0 auto;
     }
 }

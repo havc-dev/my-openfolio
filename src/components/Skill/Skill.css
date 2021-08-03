@@ -19,6 +19,18 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
+@media only screen and (min-width: 769px) {
+  .skill-wrapper {
+    width: 120px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .skill-wrapper {
+    width: 250px;
+  }
+}
+
 .skill-wrapper .skill-icon {
   color: #ff2b00;
   display: -webkit-box;

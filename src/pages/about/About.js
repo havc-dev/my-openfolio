@@ -9,7 +9,7 @@ const About = (props) => {
   
   const { info } = props;
   const { title, subtitle, location, aboutMeP1, aboutMeP2, stack, button } = info;
-  const { className, icon, btn_text, type} = button;
+  const { icon, btn_text, type} = button;
 
   return (
     <div className="page-wrapper">

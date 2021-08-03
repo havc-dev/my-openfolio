@@ -13,7 +13,7 @@ body {
   font-family: $ff-Primary;
   box-sizing: border-box;
   background-image: url('./images/img/background.jpg');
-  background-image:url('./images/background.webp');
+  background-image: url('./images/webp/img/background.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,7 +31,7 @@ body {
     font-size: $fs-20;
   }
   @include uhd {
-    font-size: $fs-24;
+    font-size: $fs-32;
   }
 }
 body, p, a, ul, li {
@@ -50,17 +50,17 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 h1 {
-  font-size: $fs-28;
+  font-size: $fs-20;
 }
 h2 {
-  font-size: $fs-24;
+  font-size: $fs-16;
   color: $color-Accent;
 }
 h3 {
-  font-size: $fs-20;
+  font-size: $fs-14;
 }
 h4 {
-  font-size: $fs-16;
+  font-size: $fs-12;
 }
 #root {
   height: 100%;
@@ -98,4 +98,32 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: auto;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-Accent-900;
+  border-radius: $border-Radius;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $color-Accent;
+}
+::-webkit-scrollbar-thumb:active {
+  background: hsla(0, 0%, 0%, 0.85);
+}
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 0%, 0.35);
+  border-radius: $border-Radius;
+}
+::-webkit-scrollbar-track:hover {
+  background: hsla(0, 0%, 100%, 0.15);
+}
+::-webkit-scrollbar-track:active {
+  background: $color-Accent-900;
+}
+::-webkit-scrollbar-corner {
+  background: white;
 }

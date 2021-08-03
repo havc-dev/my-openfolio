@@ -12,7 +12,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: url("./images/img/background.jpg");
-  background-image: url("./images/background.webp");
+  background-image: url("./images/webp/img/background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -42,7 +42,7 @@ body {
 
 @media only screen and (min-width: 2000px) {
   body {
-    font-size: 2.4em;
+    font-size: 3.2em;
   }
 }
 
@@ -65,20 +65,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 1.6em;
   color: #ff2b00;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 h4 {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 #root {
@@ -132,5 +132,40 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #991a00;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2b00;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+::-webkit-scrollbar-track:active {
+  background: #991a00;
+}
+
+::-webkit-scrollbar-corner {
+  background: white;
 }
 /*# sourceMappingURL=App.css.map */

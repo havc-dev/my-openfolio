@@ -46,6 +46,11 @@
             "index": 4,
             "tool": "React JS",
             "icon": "fab fa-react fa-fw fa-lg"
+            },
+            {
+            "index": 5,
+            "tool": "Gulp",
+            "icon": "fab fa-gulp fa-fw fa-lg"
             }
         ],
         "button": {
@@ -67,26 +72,26 @@
                     {
                         "title": "openfolio home",
                         "description": "Home page",
-                        "webp": "openfolio-home-m.webp",
-                        "jpg":  "openfolio-home-m.jpg"
+                        "webp": "openfolio-home-desktop.webp",
+                        "jpg":  "openfolio-home-desktop.jpg"
                     },
                     {
                         "title": "openfolio about",
                         "description": "About page",
-                        "webp": "openfolio-about-m.webp",
-                        "jpg":  "openfolio-about-m.jpg"
+                        "webp": "openfolio-about-desktop.webp",
+                        "jpg":  "openfolio-about-desktop.jpg"
                     },
                     {
                         "title": "openfolio projects",
                         "description": "Projects page",
-                        "webp": "openfolio-projects-m.webp",
-                        "jpg":  "openfolio-projects-m.jpg"
+                        "webp": "openfolio-projects-desktop.webp",
+                        "jpg":  "openfolio-projects-desktop.jpg"
                     },
                     {
                         "title": "openfolio contact",
                         "description": "Contact form",
-                        "webp": "openfolio-contact-m.webp",
-                        "jpg":  "openfolio-contact-m.jpg"
+                        "webp": "openfolio-contact-desktop.webp",
+                        "jpg":  "openfolio-contact-desktop.jpg"
                     }
                 ],
                 "used_tools": [
@@ -114,6 +119,11 @@
                     "index": 4,
                     "tool": "React JS",
                     "icon": "fab fa-react fa-fw fa-lg"
+                    },
+                    {
+                    "index": 5,
+                    "tool": "Gulp",
+                    "icon": "fab fa-gulp fa-fw fa-lg"
                     }
                 ],
                 "links": {
@@ -141,26 +151,26 @@
                     {
                         "title": "openfolio home",
                         "description": "Home page",
-                        "webp": "openfolio-home-m.webp",
-                        "jpg":  "openfolio-home-m.jpg"
+                        "webp": "openfolio-home-desktop.webp",
+                        "jpg":  "openfolio-home-desktop.jpg"
                     },
                     {
                         "title": "openfolio about",
                         "description": "About page",
-                        "webp": "openfolio-about-m.webp",
-                        "jpg":  "openfolio-about-m.jpg"
+                        "webp": "openfolio-about-desktop.webp",
+                        "jpg":  "openfolio-about-desktop.jpg"
                     },
                     {
                         "title": "openfolio projects",
                         "description": "Projects page",
-                        "webp": "openfolio-projects-m.webp",
-                        "jpg":  "openfolio-projects-m.jpg"
+                        "webp": "openfolio-projects-desktop.webp",
+                        "jpg":  "openfolio-projects-desktop.jpg"
                     },
                     {
                         "title": "openfolio contact",
                         "description": "Contact form",
-                        "webp": "openfolio-contact-m.webp",
-                        "jpg":  "openfolio-contact-m.jpg"
+                        "webp": "openfolio-contact-desktop.webp",
+                        "jpg":  "openfolio-contact-desktop.jpg"
                     }
                 ],
                 "used_tools": [
@@ -215,26 +225,26 @@
                     {
                         "title": "openfolio home",
                         "description": "Home page",
-                        "webp": "openfolio-home-m.webp",
-                        "jpg":  "openfolio-home-m.jpg"
+                        "webp": "openfolio-home-desktop.webp",
+                        "jpg":  "openfolio-home-desktop.jpg"
                     },
                     {
                         "title": "openfolio about",
                         "description": "About page",
-                        "webp": "openfolio-about-m.webp",
-                        "jpg":  "openfolio-about-m.jpg"
+                        "webp": "openfolio-about-desktop.webp",
+                        "jpg":  "openfolio-about-desktop.jpg"
                     },
                     {
                         "title": "openfolio projects",
                         "description": "Projects page",
-                        "webp": "openfolio-projects-m.webp",
-                        "jpg":  "openfolio-projects-m.jpg"
+                        "webp": "openfolio-projects-desktop.webp",
+                        "jpg":  "openfolio-projects-desktop.jpg"
                     },
                     {
                         "title": "openfolio contact",
                         "description": "Contact form",
-                        "webp": "openfolio-contact-m.webp",
-                        "jpg":  "openfolio-contact-m.jpg"
+                        "webp": "openfolio-contact-desktop.webp",
+                        "jpg":  "openfolio-contact-desktop.jpg"
                     }
                 ],
                 "used_tools": [

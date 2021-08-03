@@ -1,4 +1,5 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
 
 .footer {
     width: 100%;
@@ -10,16 +11,35 @@
     z-index: 3;
     margin-bottom: 0;
     padding: 1rem 0;
+    font-size: $fs-10;
+    
     .footer-container {
         width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
+        @include tablet {
+            width: 90%;
+            max-width: 600px;
+        }
+        @include laptop {
+            width: 85%;
+            max-width: 900px;
+        }
+        @include desktop {
+            width: 75%;
+            max-width: 1200px;
+        }
+        @include uhd {
+            width: 66%;
+            max-width: 2400px;
+        }
         .footer-rights {
-            width: 30%;
-            .footer-rights-text {
-                width: 100%;
+            width: 40%;
+            display: flex;
+            .footer-text {
+                margin-right: 1rem;
             }
         }
         .footer-contact {

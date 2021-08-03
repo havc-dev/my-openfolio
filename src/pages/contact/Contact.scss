@@ -28,4 +28,14 @@
     .header {
         margin: 2rem 0;
     }
-}
+        .contact-links-container {
+            box-shadow: $box-shadow-1;
+            .contact-links-title {
+                margin: 2rem 0;
+                color: $color-Accent;
+            }
+            .contact-links-subtitle {
+                margin: 2rem 0;
+            }
+        }
+    }

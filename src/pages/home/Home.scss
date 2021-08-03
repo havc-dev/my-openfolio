@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
+    font-size: $fs-10;
     @include tablet {
         width: 90%;
         max-width: 600px;

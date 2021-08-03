@@ -17,6 +17,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -80,7 +81,7 @@
 }
 
 .nav-container .nav-bar .nav-logo .nav-logo-pt1 {
-  font-size: 2.4em;
+  font-size: 2em;
   margin: 1rem;
   text-align: center;
   color: white;
@@ -116,7 +117,8 @@
 
 @media only screen and (min-width: 600px) {
   .nav-container .nav-bar .nav-links {
-    width: 60%;
+    width: 70%;
+    font-size: 0.8em;
   }
 }
 

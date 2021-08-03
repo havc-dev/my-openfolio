@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        font-size: 1em;
         @include tablet {
             width: 90%;
             max-width: 600px;
@@ -39,7 +40,7 @@
         .nav-logo {
             padding: 1rem 0;
             .nav-logo-pt1 {
-                font-size: $fs-24;
+                font-size: $fs-20;
                 margin: 1rem;
                 text-align: center;
                 color: $color-White;
@@ -62,9 +63,12 @@
             overflow-x: hidden;
             overflow-y: hidden;
             @include tablet {
-                width: 60%;
+                width: 70%;
+                font-size: 0.8em;
             }
-            @include laptop {}
+            @include laptop {
+                // font-size: 1em;
+            }
             @include desktop {}
             .nav-link {
                 font-size: $fs-12;

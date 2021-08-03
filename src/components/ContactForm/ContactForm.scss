@@ -1,4 +1,6 @@
 @import '../../components/sass/Variables.scss';
+@import '../../components/sass/Mixins.scss';
+
 
 .contact-form {
     box-shadow: $box_shadow_1;
@@ -7,35 +9,67 @@
     justify-content: space-around;
     width: 100%;
     background-color: hsla(0, 0%, 0%, 0.5);
+    margin-bottom: 7rem;
     border-radius: $border-Radius;
-    margin-bottom: 5rem;
 
     .form-group {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 1rem 0;
-        .col {
+        margin: 1rem auto;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .input-group {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0 auto;
             .form-control {
                 background-color: $gradient;
             }
         }
     }
+    .text-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
+.contact-links-container {
+    display: none;
+    @include tablet {
+        background-color: hsla(0, 0%, 0%, 0.5);
+        border-radius: $border-Radius;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+    .contact-links-title {
+        margin: 1rem;
+    }
+    .contact-links-subtitle {
+        margin: 1rem;
+    }
+}
 label {
     color: $color-Accent;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-size: $fs-16;
+    font-size: $fs-12;
+    width: 90%;
+    text-align: center;
+    margin: 1rem;
+    @include tablet {
+        text-align: start;
+    }
 }
 input {
     width: 90%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 input[type=text] {
     height: 2rem;

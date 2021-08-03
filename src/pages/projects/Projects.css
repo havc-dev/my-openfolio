@@ -113,4 +113,9 @@
   color: #ff2b00;
   opacity: 0.75;
 }
+
+.projects .slick-prev:before,
+.projects .slick-next:before {
+  color: #ff2b00;
+}
 /*# sourceMappingURL=Projects.css.map */
