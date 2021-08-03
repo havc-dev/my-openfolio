@@ -2,14 +2,30 @@
 @import '../../components/sass/Mixins.scss';
 
 .home {
-    
     height: 100%;
     width: 90%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
+    font-size: $fs-10;
+    @include tablet {
+        width: 90%;
+        max-width: 600px;
+    }
+    @include laptop {
+        width: 85%;
+        max-width: 900px;
+    }
+    @include desktop {
+        width: 75%;
+        max-width: 1200px;
+    }
+    @include uhd {
+        width: 66%;
+        max-width: 2400px;
+    }
     .header {
         margin: 2rem 0;
     }

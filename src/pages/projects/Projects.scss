@@ -4,28 +4,40 @@
 
 .projects {
     height: 100%;
-    width: 80%;
+    width: 85%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    .header {
-        margin: 1rem 0;
+    justify-content: space-around;
+    margin:  3rem auto;
+    @include tablet {
+        width: 90%;
+        max-width: 600px;
     }
-    .prueba-slider {
-        background-color: hsla(0, 0, 0, 0.15);
-        border-radius: $border-Radius;
+    @include laptop {
+        width: 85%;
+        max-width: 900px;
+    }
+    @include desktop {
+        width: 75%;
+        max-width: 1200px;
+    }
+    @include uhd {
+        width: 66%;
+        max-width: 2400px;
+    }
+    .header {
+        margin: 0 0;
     }
 
     .slick-dots { 
         position: absolute;
-        bottom: -30px;
+        bottom: -40px;
         list-style: none;
         display: block;
         text-align: center;
-        padding: 0; width:
-        100%;
+        padding: 0;
+        width: 100%;
     }
     .slick-dots li {
         position: relative;
@@ -77,61 +89,8 @@
         color: $color-Accent;
         opacity: 0.75;
     }
+    .slick-prev:before,
+    .slick-next:before {
+        color: $color-Accent;
+    }
 }
-
-
-
-// .projects {
-//     width: 80%;
-//     height: 80%;
-//     margin: 1em auto;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
-//     overflow-x: hidden;
-// }
-
-// .slider {
-//     position: relative;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .image {
-//     width: 100%;
-//     height: 60%;
-//     border-radius: $border-Radius;
-// }
-
-// .right-carousel-arrow {
-//     position: absolute;
-//     top: 50%;
-//     right: 32px;
-//     font-size: 2em;
-//     color: $color-Accent;
-//     z-index: 10;
-//     cursor: pointer;
-//     user-select: none;
-// }
-
-// .left-carousel-arrow {
-//     position: absolute;
-//     top: 50%;
-//     left: 32px;
-//     font-size: 2em;
-//     color: $color-Accent;
-//     z-index: 10;
-//     cursor: pointer;
-//     user-select: none;
-// }
-// .carousel {
-//     opacity: 0;
-//     transition-duration: 1s ease-in-out;
-// }
-// .carousel.active {
-//     opacity: 1;
-//     transition-duration: 1s;
-//     transform: scale(1.05);
-// }

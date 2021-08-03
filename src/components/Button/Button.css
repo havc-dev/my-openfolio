@@ -1,4 +1,11 @@
-.btn {
+.btn-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn-container .btn {
   background-color: #ff2b00;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -8,33 +15,27 @@
   padding: 1rem 3rem;
   -webkit-box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
           box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
-  width: 75%;
-  margin: 2em auto;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-@media only screen and (min-width: 600px) {
-  .btn {
-    max-width: 50%;
-  }
-}
-
-.btn i {
+.btn-container .btn i {
   margin-right: 10px;
 }
 
-.btn:hover {
+.btn-container .btn:hover {
   background-color: #ff2b00;
   color: #0d0d0d;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.btn-alt {
+.btn-container .btn.extra-space {
   background-color: #ff2b00;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -44,22 +45,53 @@
   padding: 1rem 3rem;
   -webkit-box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
           box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
-  margin: 2rem auto;
   display: inline-block;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.btn-container .btn.extra-space i {
+  margin-right: 10px;
+}
+
+.btn-container .btn.btn.extra-space:hover {
+  background-color: #ff2b00;
+  color: #0d0d0d;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn-container .btn-alt {
+  background-color: #ff2b00;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+          box-shadow: 10px 2px 1px 2px rgba(0, 0, 0, 0.1), 12px 6px 5px 2px rgba(0, 0, 0, 0.15), 14px 10px 8px 2px rgba(0, 0, 0, 0.16), 16px 15px 13px 2px rgba(0, 0, 0, 0.17), 18px 30px 25px 2px rgba(0, 0, 0, 0.18), 20px 50px 40px 2px rgba(0, 0, 0, 0.22);
+  margin: 3rem auto;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.btn-alt i {
+.btn-container .btn-alt i {
   margin-right: 2rem;
 }
 
-.btn-alt:hover {
+.btn-container .btn-alt:hover {
   background-color: #ff2b00;
   color: #0d0d0d;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=Button.css.map */

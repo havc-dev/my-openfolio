@@ -9,7 +9,7 @@ const About = (props) => {
   
   const { info } = props;
   const { title, subtitle, location, aboutMeP1, aboutMeP2, stack, button } = info;
-  const { className, icon, btn_text, type} = button;
+  const { icon, btn_text, type} = button;
 
   return (
     <div className="page-wrapper">
@@ -24,10 +24,10 @@ const About = (props) => {
         </div>
         <MyStack  stack={stack}/>
         <Button
-        className={className}
-        icon={icon}
-        btn_text={btn_text}
-        type={type}
+          className="extra-space"
+          icon={icon}
+          btn_text={btn_text}
+          type={type}
         />
       </main>
     </div>

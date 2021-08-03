@@ -8,10 +8,10 @@ const ProjectInfo = (props) => {
         <>
             <div className="description">
                 <h4 className="description-title">Description:</h4>
-                <div className="description-text">
-                    <p>{description.p1}</p>
+                <div className="description-container">
+                    <p className="description-text">{description.p1}</p>
                     <br />
-                    <p>{description.p2}</p>
+                    <p className="description-text">{description.p2}</p>
                 </div>
             </div>
         </>

@@ -17,7 +17,47 @@
 
 @media only screen and (min-width: 600px) {
   .contact {
+    width: 90%;
     max-width: 600px;
   }
+}
+
+@media only screen and (min-width: 769px) {
+  .contact {
+    width: 85%;
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact {
+    width: 75%;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .contact {
+    width: 66%;
+    max-width: 2400px;
+  }
+}
+
+.contact .header {
+  margin: 2rem 0;
+}
+
+.contact .contact-links-container {
+  -webkit-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
+          box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
+}
+
+.contact .contact-links-container .contact-links-title {
+  margin: 2rem 0;
+  color: #ff2b00;
+}
+
+.contact .contact-links-container .contact-links-subtitle {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=Contact.css.map */

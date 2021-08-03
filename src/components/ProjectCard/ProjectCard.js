@@ -24,10 +24,9 @@ import './ProjectCard.css'
         
         return (
             <div className="project-card" key={title}>
-            <h4>{title}</h4>
+            <h4 className="project-title">{title}</h4>
             <div className="project-info">
                 <div className="project-imgbtns">
-                    <div id="pictures-carousel" className="project-images-carousel">
                         <Slider {...sliderSettings}>
                         {images.map((image) =>
                             <Picture
@@ -39,10 +38,9 @@ import './ProjectCard.css'
                             />
                         )}
                         </Slider>
-                    </div>
                     <div className="project-links">
-                        {!github_link ? null : <Link link={github_link} className="github"/>}
-                        {!live_link ? null : <Link link={live_link} className="live"/>}
+                        {!github_link ? null : <Link link={github_link} className="github" />}
+                        {!live_link ? null : <Link link={live_link} className="live" />}
                     </div>
                 </div>
                 <div className="project-description">

@@ -1,4 +1,13 @@
-.nav-bar {
+.nav-container {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-container .nav-bar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,20 +16,89 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.85);
+  margin: 0 auto;
+  font-size: 1em;
 }
 
-.nav-bar .nav-logo {
-  margin: 1em;
+@media only screen and (min-width: 600px) {
+  .nav-container .nav-bar {
+    width: 90%;
+    max-width: 600px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .nav-container .nav-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 85%;
+    max-width: 750px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-container .nav-bar {
+    width: 75%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .nav-container .nav-bar {
+    width: 66%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 2400px;
+  }
+}
+
+.nav-container .nav-bar .nav-logo {
+  padding: 1rem 0;
+}
+
+.nav-container .nav-bar .nav-logo .nav-logo-pt1 {
+  font-size: 2em;
+  margin: 1rem;
   text-align: center;
   color: white;
 }
 
-.nav-bar .nav-logo .nav-logo-pt2 {
+.nav-container .nav-bar .nav-logo .nav-logo-pt1 .nav-logo-pt2 {
   color: #ff2b00;
 }
 
-.nav-bar .nav-links {
+@media only screen and (min-width: 600px) {
+  .nav-container .nav-bar .nav-logo .nav-logo-pt1 {
+    font-size: 2.4em;
+    margin: 0.5rem;
+  }
+}
+
+.nav-container .nav-bar .nav-links {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -37,11 +115,18 @@
   overflow-y: hidden;
 }
 
-.nav-bar .nav-links .nav-link {
-  font-size: 1rem;
+@media only screen and (min-width: 600px) {
+  .nav-container .nav-bar .nav-links {
+    width: 70%;
+    font-size: 0.8em;
+  }
+}
+
+.nav-container .nav-bar .nav-links .nav-link {
+  font-size: 1.2em;
   text-transform: uppercase;
   line-height: 1;
-  padding: 0.5em 0;
+  padding: 0.5rem 0;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -49,18 +134,24 @@
   width: 100%;
   margin: auto 0;
   text-align: center;
+  vertical-align: bottom;
 }
 
-.nav-bar .nav-links .nav-link:link {
+@media only screen and (min-width: 600px) {
+  .nav-container .nav-bar .nav-links .nav-link {
+    font-size: 1.6em;
+  }
+}
+
+.nav-container .nav-bar .nav-links .nav-link:link {
   color: white;
   line-height: 1;
   text-decoration: none;
   text-align: center;
-  border-bottom: 0.2rem solid white;
 }
 
-.nav-bar .nav-links .nav-link:hover,
-.nav-bar .nav-links .nav-link:focus {
+.nav-container .nav-bar .nav-links .nav-link:hover,
+.nav-container .nav-bar .nav-links .nav-link:focus {
   box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
   -webkit-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
@@ -69,15 +160,15 @@
           transform: scale(1.05);
 }
 
-.nav-bar .nav-links .nav-link:active {
+.nav-container .nav-bar .nav-links .nav-link:active {
   color: #ff5500;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.nav-bar .nav-links .current {
+.nav-container .nav-bar .nav-links .current {
   background-color: rgba(0, 0, 0, 0.15);
-  border-bottom: 0.2rem solid #ff2b00;
   cursor: not-allowed;
+  color: #ff2b00;
 }
 /*# sourceMappingURL=NavBar.css.map */

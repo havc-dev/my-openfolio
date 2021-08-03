@@ -10,20 +10,47 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .about {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .about {
+    width: 85%;
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    width: 75%;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .about {
+    width: 66%;
+    max-width: 2400px;
+  }
 }
 
 .about .header {
   margin: 2rem 0;
 }
 
-.about .text {
+.about .text-p {
   width: 100%;
   line-height: 2;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=About.css.map */

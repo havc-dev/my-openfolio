@@ -7,6 +7,7 @@ import Contact from './pages/contact/Contact';
 
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 function App(props) {
   const { navbar, home, about, projects, contact } = props.info;
@@ -36,6 +37,7 @@ function App(props) {
           </Route>
         </Switch>
       }
+      <Footer info={contact}/>
     </div>
     </>
   );

@@ -6,16 +6,13 @@ import './ContactForm.css';
 
 const ContactForm = (props) => {
 
-    const { title, my_email, input_fields, text_area, button } = props;
+    const { my_email, input_fields, text_area, button } = props;
     const { className, icon, btn_text, type } = button;
 
     const action = `https://formsubmit.co/${my_email}`;
 
     return (
         <form target="_blank" action={action} method="POST" className="contact-form">
-            <h1 className="contact-title">
-                {title}
-            </h1>
             <div className="form-group">
                 {input_fields.map((input_field) =>
                     <FormInput

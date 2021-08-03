@@ -11,6 +11,7 @@ const Link = (props) => {
         <>
                 <a href={href} className={a_classes}>
                     <i className={i_classes}/>
+                    <p className="link-text">{className}</p>
                 </a>
         </>
     )

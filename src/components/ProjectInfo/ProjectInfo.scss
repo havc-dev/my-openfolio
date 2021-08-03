@@ -1,30 +1,46 @@
 @import '../sass/Variables.scss';
 @import '../sass/Mixins.scss';
 
-// .description {
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: column;
-//     width: 95%;
-//     @include tablet {
-//         max-width: 550px;
-//     }
-//     .description-title {
-//         width: 100%;
-//         color: $color-Accent;
-//         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
-//         margin: 0.5em auto;
-//         font-size: $fs-100;
-//     }
-//     .description-text {
-//         width: 95%;
-//         text-align: left;
-//         color: $color-White;
-//         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
-//         display: flex;
-//         flex-direction: column;
-//         p {
-//             margin: 0.5em auto;
-//         }
-//     }
-// }
+.description {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include tablet {
+        width: 90%;
+        max-width: 600px;
+    }
+    @include laptop {
+        width: 85%;
+        max-width: 900px;
+    }
+    @include desktop {
+        width: 75%;
+        max-width: 1200px;
+    }
+    @include uhd {
+        width: 66%;
+        max-width: 2400px;
+    }
+    .description-title {
+        width: 100%;
+        color: $color-Accent;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+        margin: 0.5em auto;
+        font-size: $fs-16;
+    }
+    .description-container {
+        width: 90%;
+        text-align: left;
+        color: $color-White;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+        display: flex;
+        flex-direction: column;
+        font-size: $fs-10;
+        
+    }
+    .description-text {
+        margin: 1rem auto;
+        line-height: 2;
+    }
+}

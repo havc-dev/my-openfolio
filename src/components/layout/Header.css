@@ -1,15 +1,14 @@
 .header-title {
   color: white;
-  margin: 0 0;
+  margin: 2rem 0;
 }
 
-.header-subtitle {
+.header-title .header-subtitle {
   color: #ff2b00;
 }
 
-.header-subtitle .subtitle-location {
+.header-title .header-subtitle .span {
   color: white;
-  font-size: 1rem;
-  margin: 0;
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=Header.css.map */

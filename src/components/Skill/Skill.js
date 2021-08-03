@@ -8,7 +8,7 @@ const Skill = (props) => {
     return (
         <div className="skill-wrapper" key={index}>
             <i className={classes}></i>
-            <h5>{skill}</h5>
+            <p className="skill-text">{skill}</p>
         </div>
     )
 }

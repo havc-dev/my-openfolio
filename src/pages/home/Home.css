@@ -10,10 +10,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 auto;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .home {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .home {
+    width: 85%;
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    width: 75%;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .home {
+    width: 66%;
+    max-width: 2400px;
+  }
 }
 
 .home .header {

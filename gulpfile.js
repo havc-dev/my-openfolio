@@ -5,16 +5,16 @@ const webp = require('gulp-webp');
 
 
 function imagesMinify() {
-    return src('src/images/**/*')
+    return src('src/assets/**/*')
         .pipe( imagemin() )
-        .pipe( dest('public/assets/img') )
+        .pipe( dest('public/assets/images') )
         .pipe( notify({ message: 'Minified jpg image'}) )
 }
 
 function versionWebp() {
-    return src('public/assets/img/**/*')
+    return src('public/assets/images/**/*')
         .pipe( webp() )
-        .pipe( dest('public/assets/img'))
+        .pipe( dest('public/assets/images/webp'))
         .pipe( notify({ message: 'Webp version ready'}))
 }
 

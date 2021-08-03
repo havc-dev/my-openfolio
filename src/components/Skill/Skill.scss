@@ -1,24 +1,31 @@
 @import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
 
 .skill-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 1rem auto;
     align-self: center;
     justify-self: center;
     width: 90px;
     transition: transform 0.5s;
+    @include laptop{
+        width: 120px;
+    }
+    @include desktop {
+        width: 250px;
+    }
     .skill-icon {
         color: $color-Accent;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding: 0.25em;
+        padding: 0.5rem;
     }
     
-    h4 {
-        font-size: $fs-10;
+    .skill-text {
+        font-size: $fs-12;
     }
 }
 .skill-wrapper:hover {

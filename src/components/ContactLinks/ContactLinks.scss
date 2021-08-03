@@ -1,0 +1,31 @@
+@import '../sass/Variables.scss';
+@import '../sass/Mixins.scss';
+
+.contact-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .contact-link {
+        display: block;
+        .anchor {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include tablet {
+                flex-direction: row;
+            }
+            .anchor-icon {
+                color: $color-Accent;
+                margin: 0 auto;
+            }
+            .anchor-text {
+                display: none;
+                @include tablet {
+                    display: flex;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
