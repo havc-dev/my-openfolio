@@ -8,7 +8,7 @@
     "home": {
         "title": "Welcome",
         "sub_title": "I'm Adrián Curiel",
-        "text": "I'm a self-taught Front End Developer who likes CSS and the customization posibilities it offers, this portfolio is ment to help backend developers build a nice portfolio",
+        "text": "I'm a self-taught Front End Developer who likes CSS and the customization posibilities it offers, this portfolio is meant to help backend developers build a nice portfolio",
         "button": {
             "icon":"fas fa-handshake fa-fw fa-lg",
             "btn_text": "Contact!",
@@ -19,7 +19,7 @@
         "title": "About Me",
         "subtitle": "I always loved to learn!",
         "location": "Currently based In Cancún, Mx",
-        "aboutMeP1": "I really enjoy to keep my mind bussy learning new things, a good friend introduced me to programming and now I can say I found my happy place",
+        "aboutMeP1": "I really enjoy to keep my mind busy learning new things, a good friend introduced me to programming and now I can say I found my happy place",
         "aboutMeP2": "I want to constantly improve my Front End skills. I Also like the idea of being able to develop my own projects so I have in mind learning Back End in the future",
         "stack": [
             {

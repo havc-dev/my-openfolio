@@ -24,7 +24,7 @@ import './ProjectCard.css'
         
         return (
             <div className="project-card" key={title}>
-            <h4 className="project-title">{title}</h4>
+            <h2 className="project-title">{title}</h2>
             <div className="project-info">
                 <div className="project-imgbtns">
                         <Slider {...sliderSettings}>

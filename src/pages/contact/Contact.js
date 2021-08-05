@@ -24,7 +24,7 @@ const Contact = (props) => {
                         my_email={my_email}
                         input_fields={input_fields}
                         text_area={text_area}
-                        button={button}       
+                        button={button}
                     />
             </main>
         </div>

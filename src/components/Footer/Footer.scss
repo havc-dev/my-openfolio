@@ -11,14 +11,15 @@
     z-index: 3;
     margin-bottom: 0;
     padding: 1rem 0;
-    font-size: $fs-10;
+    font-size: $fs-12;
     
     .footer-container {
         width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
+        font-size: $fs-10;
         @include tablet {
             width: 90%;
             max-width: 600px;
@@ -36,14 +37,16 @@
             max-width: 2400px;
         }
         .footer-rights {
-            width: 40%;
+            width: 100%;
             display: flex;
+            flex-direction: row;
             .footer-text {
                 margin-right: 1rem;
             }
         }
         .footer-contact {
-            width: 60%;
+            width: 100%;
+            font-size: $fs-10;
         }
     }
 }

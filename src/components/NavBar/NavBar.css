@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .nav-container .nav-bar {
@@ -93,7 +93,7 @@
 
 @media only screen and (min-width: 600px) {
   .nav-container .nav-bar .nav-logo .nav-logo-pt1 {
-    font-size: 2.4em;
+    font-size: 2em;
     margin: 0.5rem;
   }
 }
@@ -123,7 +123,7 @@
 }
 
 .nav-container .nav-bar .nav-links .nav-link {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
   line-height: 1;
   padding: 0.5rem 0;

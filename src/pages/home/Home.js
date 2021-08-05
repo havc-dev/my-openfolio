@@ -16,7 +16,7 @@ const Home = (props) => {
                     <Header title={title} subtitle={sub_title} />
                 </div>
                 <div className="text">
-                    <h4>{text}</h4>
+                    <p className="text">{text}</p>
                 </div>
                 <Button
                     icon={icon}

@@ -10,7 +10,7 @@
   z-index: 3;
   margin-bottom: 0;
   padding: 1rem 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .footer .footer-container {
@@ -23,9 +23,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -57,10 +58,14 @@
 }
 
 .footer .footer-container .footer-rights {
-  width: 40%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer .footer-container .footer-rights .footer-text {
@@ -68,6 +73,7 @@
 }
 
 .footer .footer-container .footer-contact {
-  width: 60%;
+  width: 100%;
+  font-size: 1em;
 }
 /*# sourceMappingURL=Footer.css.map */

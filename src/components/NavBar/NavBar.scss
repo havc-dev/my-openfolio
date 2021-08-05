@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: hsla(0,0,0,0.75);
+    background-color: hsla(0,0,0,0.55);
     .nav-bar {
         width: 100%;
         display: flex;
@@ -48,7 +48,7 @@
                     color: $color-Accent;
                 }
                 @include tablet {
-                    font-size: $fs-24;
+                    font-size: $fs-20;
                     margin: 0.5rem;
                 }
             }
@@ -71,7 +71,7 @@
             }
             @include desktop {}
             .nav-link {
-                font-size: $fs-12;
+                font-size: $fs-11;
                 text-transform: uppercase;
                 line-height: 1;
                 padding: 0.5rem 0;

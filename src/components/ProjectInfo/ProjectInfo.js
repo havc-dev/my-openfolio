@@ -7,7 +7,7 @@ const ProjectInfo = (props) => {
     return (
         <>
             <div className="description">
-                <h4 className="description-title">Description:</h4>
+                <h3 className="description-title">Description:</h3>
                 <div className="description-container">
                     <p className="description-text">{description.p1}</p>
                     <br />
