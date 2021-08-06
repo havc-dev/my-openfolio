@@ -314,10 +314,16 @@
                     "name": "email",
                     "type": "email",
                     "placeholder": "john.doe@email.com"
+                },
+                {
+                    "label": "Subject",
+                    "name": "subject",
+                    "type": "text",
+                    "placeholder": "I have a job offer..."
                 }
         ],
         "text_area": {
-            "label": "Subject:",
+            "label": "Message:",
             "placeholder": "Your message...",
             "name": "message"
         },
