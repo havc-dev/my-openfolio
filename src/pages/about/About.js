@@ -24,7 +24,7 @@ const About = (props) => {
         </div>
         <MyStack  stack={stack}/>
         <Button
-          className="extra-space"
+          className=""
           icon={icon}
           btn_text={btn_text}
           type={type}

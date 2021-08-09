@@ -1,6 +1,6 @@
 .home {
   height: 100%;
-  width: 90%;
+  width: 100%;
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
   display: -webkit-box;
@@ -10,37 +10,44 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
-  font-size: 1em;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 599px) {
   .home {
-    width: 90%;
-    max-width: 600px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 600px) {
   .home {
-    width: 85%;
-    max-width: 900px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 900px) {
   .home {
-    width: 75%;
-    max-width: 1200px;
+    width: 62%;
+    max-width: max-tablet-landscape-width;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media (min-width: 1300px) {
   .home {
-    width: 66%;
-    max-width: 2400px;
+    width: 62%;
+    max-width: 62%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .home {
+    width: 62%;
+    max-width: 62%;
   }
 }
 
@@ -52,6 +59,5 @@
   width: 100%;
   line-height: 2;
   margin: 0 auto;
-  font-size: 1.2em;
 }
 /*# sourceMappingURL=Home.css.map */

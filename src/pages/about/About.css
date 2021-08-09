@@ -10,41 +10,45 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 599px) {
   .about {
-    width: 90%;
-    max-width: 600px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 600px) {
   .about {
-    width: 85%;
-    max-width: 900px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 900px) {
   .about {
-    width: 75%;
-    max-width: 1200px;
+    width: 62%;
+    max-width: max-tablet-landscape-width;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media (min-width: 1300px) {
   .about {
-    width: 66%;
-    max-width: 2400px;
+    width: 62%;
+    max-width: 62%;
   }
 }
 
-.about .header {
-  margin: 2rem 0;
+@media (min-width: 2000px) {
+  .about {
+    width: 62%;
+    max-width: 62%;
+  }
 }
 
 .about .text-p {

@@ -9,7 +9,6 @@
     justify-content: space-around;
     width: 100%;
     background-color: hsla(0, 0%, 0%, 0.5);
-    margin-bottom: 7rem;
     border-radius: $border-Radius;
 
     .form-group {
@@ -18,7 +17,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 1rem auto;
-        @include tablet {
+        @include for-tablet-portrait-up {
             flex-direction: row;
             justify-content: space-evenly;
         }
@@ -43,28 +42,29 @@
 
 .contact-links-container {
     display: none;
-    @include tablet {
+    @include for-tablet-portrait-up {
         background-color: hsla(0, 0%, 0%, 0.5);
         border-radius: $border-Radius;
         display: flex;
         flex-direction: column;
-        padding: 3rem;
+        padding: 3em;
     }
     .contact-links-title {
-        margin: 1rem;
+        margin: 1em;
     }
     .contact-links-subtitle {
-        margin: 1rem;
+        margin: 1em;
     }
 }
 label {
-    color: $color-Accent;
+    color: $color-Primary;
     font-size: $fs-12;
     width: 90%;
     text-align: center;
-    margin: 1rem;
-    @include tablet {
+    margin: 1em;
+    @include for-tablet-portrait-up {
         text-align: start;
+        margin-left: 1em;
     }
 }
 input {
@@ -72,28 +72,28 @@ input {
     margin: 1rem auto;
 }
 input[type=text] {
-    height: 2rem;
+    height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
     border: 2px solid $invisible;
 }
 input[type=text]:focus {
-    height: 2rem;
+    height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
     border: 2px solid $color-Accent-900;
 }
 input[type=email] {
-    height: 2rem;
+    height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
     border: 2px solid $invisible;
 }
 input[type=email]:focus {
-    height: 2rem;
+    height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
@@ -104,7 +104,7 @@ textarea {
     outline: $form-outline;
     width: 90%;
     height: 150px;
-    padding: 1rem;
+    padding: 1em;
     box-sizing: border-box;
     border: 2px solid $invisible;
     background-color: hsla(0, 0, 0, 0.25);
@@ -116,7 +116,7 @@ textarea:focus {
     outline: $form-outline;
     width: 90%;
     height: 150px;
-    padding: 1rem;
+    padding: 1em;
     box-sizing: border-box;
     border: 2px solid $color-Accent-900;
     background-color: hsla(0, 0, 0, 0.25);

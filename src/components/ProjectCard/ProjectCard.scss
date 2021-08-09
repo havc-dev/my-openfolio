@@ -15,7 +15,7 @@
     font-size: 1em;
 
     .project-title {
-        color: $color-Accent;
+        color: $color-Primary;
         filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.75));
         margin: 2rem auto;
         font-size: $fs-16;
@@ -37,21 +37,25 @@
                 width: 100%;
                 margin: 0 auto;
                 height: auto;
-                @include tablet {
-                    width: 90%;
-                    max-width: 600px;
+                @include for-phone-only {
+                    width: $width-portrait;
+                    max-width: $max-phone-width;
                 }
-                @include laptop {
-                    width: 85%;
-                    max-width: 900px;
+                @include for-tablet-portrait-up {
+                    width: $width-portrait;
+                    max-width: $max-tablet-portrait-width;
                 }
-                @include desktop {
-                    width: 75%;
-                    max-width: 1200px;
+                @include for-tablet-landscape-up {
+                    width: $width-landscape;
+                    max-width: max-tablet-landscape-width;
                 }
-                @include uhd {
-                    width: 66%;
-                    max-width: 2400px;
+                @include for-desktop-up {
+                    width: $width-landscape;
+                    max-width: $max-desktop-width;
+                }
+                @include for-big-desktop-up {
+                    width: $width-landscape;
+                    max-width: $max-big-desktop-width;
                 }
             }
             
@@ -68,20 +72,19 @@
                     color: $color-Neutral-900;
                     border: none;
                     border-radius: $border-Radius;
-                    padding: 1rem 3rem;
+                    padding: $button-Padding;
                     box-shadow: $box-shadow-1;
                     margin: 0 auto;
-                    margin-top: 2rem;
+                    margin-top: 2em;
                     text-align: center;
                     transition: transform 0.35s;
                     display: flex;
-                    @include tablet {
+                    @include for-tablet-portrait-up {
                         width: 150px;
-
                     }
                 }
                 .link:hover {
-                    background-color: $color-Accent;
+                    background-color: $color-Primary;
                     transform: scale(1.05);
                 }
                 .link-text {
@@ -89,7 +92,7 @@
                     color: $color-Neutral-900;
                     text-transform: capitalize;
                     margin: 0 auto;
-                    @include tablet {
+                    @include for-tablet-portrait-up {
                         display: block;
                     }
                 }

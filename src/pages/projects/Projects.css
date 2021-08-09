@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .projects {
   height: 100%;
-  width: 85%;
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
   display: -webkit-box;
@@ -11,41 +10,45 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 3rem auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 599px) {
   .projects {
-    width: 90%;
-    max-width: 600px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 600px) {
   .projects {
-    width: 85%;
-    max-width: 900px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 900px) {
   .projects {
-    width: 75%;
-    max-width: 1200px;
+    width: 62%;
+    max-width: max-tablet-landscape-width;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media (min-width: 1300px) {
   .projects {
-    width: 66%;
-    max-width: 2400px;
+    width: 62%;
+    max-width: 62%;
   }
 }
 
-.projects .header {
-  margin: 0 0;
+@media (min-width: 2000px) {
+  .projects {
+    width: 62%;
+    max-width: 62%;
+  }
 }
 
 .projects .slick-dots {
@@ -104,14 +107,14 @@
   line-height: 5px;
   text-align: center;
   color: #991a00;
-  opacity: 0.25;
+  opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .projects .slick-dots li.slick-active button:before {
   color: #ff2b00;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .projects .slick-prev:before,

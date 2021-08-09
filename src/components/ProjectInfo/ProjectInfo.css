@@ -10,31 +10,38 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 599px) {
   .description {
-    width: 90%;
-    max-width: 600px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 600px) {
   .description {
-    width: 85%;
-    max-width: 900px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 900px) {
   .description {
-    width: 75%;
-    max-width: 1200px;
+    width: 62%;
+    max-width: max-tablet-landscape-width;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media (min-width: 1300px) {
   .description {
-    width: 66%;
-    max-width: 2400px;
+    width: 62%;
+    max-width: 62%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .description {
+    width: 62%;
+    max-width: 62%;
   }
 }
 

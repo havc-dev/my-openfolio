@@ -29,15 +29,6 @@
           justify-content: space-between;
 }
 
-@media only screen and (min-width: 600px) {
-  .contact-links .contact-link .anchor {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 .contact-links .contact-link .anchor .anchor-icon {
   color: #ff2b00;
   margin: 0 auto;
@@ -45,14 +36,5 @@
 
 .contact-links .contact-link .anchor .anchor-text {
   display: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .contact-links .contact-link .anchor .anchor-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 0.5em;
-  }
 }
 /*# sourceMappingURL=ContactLinks.css.map */

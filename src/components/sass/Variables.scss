@@ -72,7 +72,6 @@ $invisible: hsl(0,0%, 0%);
 $gradient: linear-gradient(0deg, hsla(0, 0%, 0%, 0.81) 0%, rgba(0,0,0,0.6866947462578781) 35%, rgba(0,0,0,0.5) 100%);
 
 /////***** Fonts ***** \\\\\
-
 ///// Fonts - Family \\\\\
 
 $ff-Primary: 'Montserrat', sans-serif;
@@ -147,7 +146,9 @@ $box-shadow-2:
 
 $form-outline: none !important;
 
-$button-Padding: 1rem 3rem;
-$button-Padding-Small: 0.25rem, 0.75rem;
+$button-Padding: 0.5em 1.5em;
+$button-Padding-Small: 0.25em, 0.75em;
 
-$border-Radius: 0.5rem;
+$border-Radius: 0.5em;
+
+$center-X: 0 auto;

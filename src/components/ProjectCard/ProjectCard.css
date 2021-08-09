@@ -10,7 +10,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 500px;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
           box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
   overflow-x: hidden;
@@ -36,7 +36,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -64,31 +64,38 @@
   height: auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 599px) {
   .project-card .project-info .project-imgbtns .project-picture {
-    width: 90%;
-    max-width: 600px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 600px) {
   .project-card .project-info .project-imgbtns .project-picture {
-    width: 85%;
-    max-width: 900px;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 900px) {
   .project-card .project-info .project-imgbtns .project-picture {
-    width: 75%;
-    max-width: 1200px;
+    width: 62%;
+    max-width: max-tablet-landscape-width;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media (min-width: 1300px) {
   .project-card .project-info .project-imgbtns .project-picture {
-    width: 66%;
-    max-width: 2400px;
+    width: 62%;
+    max-width: 62%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .project-card .project-info .project-imgbtns .project-picture {
+    width: 62%;
+    max-width: 62%;
   }
 }
 
@@ -112,12 +119,12 @@
   font-size: 1em;
   color: #0d0d0d;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 1rem 3rem;
   -webkit-box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
           box-shadow: 5px 2px 1px 2px rgba(0, 0, 0, 0.1), 6px 6px 5px 2px rgba(0, 0, 0, 0.15), 7px 10px 8px 2px rgba(0, 0, 0, 0.16), 8px 15px 13px 2px rgba(0, 0, 0, 0.17), 9px 30px 25px 2px rgba(0, 0, 0, 0.18), 10px 50px 40px 2px rgba(0, 0, 0, 0.22);
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 2em;
   text-align: center;
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
@@ -128,7 +135,7 @@
   display: flex;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .project-card .project-info .project-imgbtns .project-links .link {
     width: 150px;
   }
@@ -147,7 +154,7 @@
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .project-card .project-info .project-imgbtns .project-links .link-text {
     display: block;
   }

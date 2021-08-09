@@ -4,30 +4,30 @@
 
 .projects {
     height: 100%;
-    width: 85%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin:  3rem auto;
-    @include tablet {
-        width: 90%;
-        max-width: 600px;
+    justify-content: space-between;
+    margin:  0 auto;
+    @include for-phone-only {
+        width: $width-portrait;
+        max-width: $max-phone-width;
     }
-    @include laptop {
-        width: 85%;
-        max-width: 900px;
+    @include for-tablet-portrait-up {
+        width: $width-portrait;
+        max-width: $max-tablet-portrait-width;
     }
-    @include desktop {
-        width: 75%;
-        max-width: 1200px;
+    @include for-tablet-landscape-up {
+        width: $width-landscape;
+        max-width: max-tablet-landscape-width;
     }
-    @include uhd {
-        width: 66%;
-        max-width: 2400px;
+    @include for-desktop-up {
+        width: $width-landscape;
+        max-width: $max-desktop-width;
     }
-    .header {
-        margin: 0 0;
+    @include for-big-desktop-up {
+        width: $width-landscape;
+        max-width: $max-big-desktop-width;
     }
 
     .slick-dots { 
@@ -81,16 +81,16 @@
         line-height: 5px;
         text-align: center;
         color: $color-Accent-900;
-        opacity: 0.25;
+        opacity: 0.75;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
     .slick-dots li.slick-active button:before {
-        color: $color-Accent;
-        opacity: 0.75;
+        color: $color-Primary;
+        opacity: 0.85;
     }
     .slick-prev:before,
     .slick-next:before {
-        color: $color-Accent;
+        color: $color-Primary;
     }
 }

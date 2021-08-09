@@ -12,20 +12,25 @@
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
-  width: 90px;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-@media only screen and (min-width: 769px) {
+@media (max-width: 599px) {
+  .skill-wrapper {
+    width: 90px;
+  }
+}
+
+@media (min-width: 600px) {
   .skill-wrapper {
     width: 120px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1300px) {
   .skill-wrapper {
     width: 250px;
   }
@@ -40,11 +45,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 .skill-wrapper .skill-text {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .skill-wrapper:hover {

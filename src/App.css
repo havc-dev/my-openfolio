@@ -22,27 +22,33 @@ body {
   font-size: 1em;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 599px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 600px) {
   body {
     font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 900px) {
   body {
     font-size: 1.6em;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1300px) {
   body {
     font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media (min-width: 2000px) {
   body {
-    font-size: 3.2em;
+    font-size: 3.6em;
   }
 }
 
@@ -133,6 +139,7 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-block: clamp(10rem, 12rem, 15vmax);
 }
 
 ::-webkit-scrollbar {
@@ -142,7 +149,7 @@ h4 {
 
 ::-webkit-scrollbar-thumb {
   background: #991a00;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -155,7 +162,7 @@ h4 {
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
 ::-webkit-scrollbar-track:hover {
