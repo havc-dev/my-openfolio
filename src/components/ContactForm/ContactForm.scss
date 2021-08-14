@@ -8,9 +8,12 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: hsla(0, 0%, 0%, 0.25);
     border-radius: $border-Radius;
-
+    height: 100%;
+    .form-header {
+        margin: 1rem;
+    }
     .form-group {
         width: 100%;
         display: flex;
@@ -39,65 +42,54 @@
         justify-content: space-between;
     }
 }
-
-.contact-links-container {
-    display: none;
-    @include for-tablet-portrait-up {
-        background-color: hsla(0, 0%, 0%, 0.5);
-        border-radius: $border-Radius;
-        display: flex;
-        flex-direction: column;
-        padding: 3em;
-    }
-    .contact-links-title {
-        margin: 1em;
-    }
-    .contact-links-subtitle {
-        margin: 1em;
-    }
-}
 label {
     color: $color-Primary;
-    font-size: $fs-12;
     width: 90%;
     text-align: center;
-    margin: 1em;
-    @include for-tablet-portrait-up {
-        text-align: start;
-        margin-left: 1em;
-    }
+    margin: 1rem;
+    font-weight: $fw-Black;
 }
 input {
     width: 90%;
     margin: 1rem auto;
+    border: 2px solid $color-Accent-900;
+    font-weight: $fw-Black;
+    color: $color-White;
+}
+input:focus {
+    width: 90%;
+    margin: 1rem auto;
+    border: 2px solid $color-Accent-400;
+    font-weight: $fw-Black;
+    color: $color-White;
 }
 input[type=text] {
     height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
-    border: 2px solid $invisible;
+    border: 2px solid $color-Accent-900;
 }
 input[type=text]:focus {
     height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
-    border: 2px solid $color-Accent-900;
+    border: 2px solid $color-Accent-400;
 }
 input[type=email] {
     height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-100;
-    border: 2px solid $invisible;
+    border: 2px solid $color-Accent-900;
 }
 input[type=email]:focus {
     height: 2em;
     outline: $form-outline;
     background-color: hsla(0, 0, 0, 0.25);
     color: $color-Neutral-200;
-    border: 2px solid $color-Accent-900;
+    border: 2px solid $color-Accent-400;
 }
 
 textarea {
@@ -106,7 +98,7 @@ textarea {
     height: 150px;
     padding: 1em;
     box-sizing: border-box;
-    border: 2px solid $invisible;
+    border: 2px solid $color-Accent-900;
     background-color: hsla(0, 0, 0, 0.25);
     resize: none;
     margin: 0 auto;
@@ -118,7 +110,7 @@ textarea:focus {
     height: 150px;
     padding: 1em;
     box-sizing: border-box;
-    border: 2px solid $color-Accent-900;
+    border: 2px solid $color-Accent-400;
     background-color: hsla(0, 0, 0, 0.25);
     resize: none;
     margin: 0 auto;

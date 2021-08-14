@@ -1,138 +1,141 @@
-@import '../sass/Variables.scss';
-@import '../sass/Mixins.scss';
+@import "../sass/Variables.scss";
+@import "../sass/Mixins.scss";
 
 .nav-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: hsla(0, 0, 0, 0.45);
+  .nav-bar {
     width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background-color: hsla(0,0,0,0.55);
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    @include for-phone-only {
+      width: $width-portrait;
+      max-width: $max-phone-width;
+    }
+    @include for-tablet-portrait-up {
+      width: $width-portrait;
+      max-width: $max-tablet-portrait-width;
+      flex-direction: row;
+    }
+    @include for-tablet-landscape-up {
+      width: $width-landscape;
+      max-width: max-tablet-landscape-width;
+    }
+    @include for-desktop-up {
+      width: $width-landscape;
+      max-width: $max-desktop-width;
+    }
+    @include for-big-desktop-up {
+      width: $width-landscape;
+      max-width: $max-big-desktop-width;
+    }
+    .nav-logo {
+      padding: 1rem 0;
+      text-align: center;
+      .nav-logo-pt1 {
+        font-size: $fs-20;
+        color: $color-White;
         @include for-phone-only {
-            width: $width-portrait;
-            max-width: $max-phone-width;
+          font-size: $fs-24;
         }
         @include for-tablet-portrait-up {
-            width: $width-portrait;
-            max-width: $max-tablet-portrait-width;
-            flex-direction: row;
+          font-size: $fs-20;
         }
         @include for-tablet-landscape-up {
-            width: $width-landscape;
-            max-width: max-tablet-landscape-width;
+          margin: 0;
+        }
+        .nav-logo-pt2 {
+          color: $color-Primary;
+        }
+      }
+    }
+    .nav-links {
+      width: 100%;
+      font-family: $ff-Secondary;
+      font-weight: $fw-Bold;
+      transform: scale(1);
+      transition: display 300ms, transform 300ms;
+      display: flex;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      margin: 0 auto;
+      @include for-phone-only {
+        width: 100%;
+        max-width: 100%;
+      }
+      @include for-tablet-portrait-up {
+        margin-left: auto;
+        width: 50%;
+        max-width: $max-tablet-portrait-width;
+        margin-right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @include for-tablet-landscape-up {
+        width: $width-landscape;
+        max-width: max-tablet-landscape-width;
+      }
+      @include for-desktop-up {
+        width: $width-landscape;
+        max-width: $max-desktop-width;
+      }
+      @include for-big-desktop-up {
+        width: $width-landscape;
+        max-width: $max-big-desktop-width;
+      }
+      .nav-link {
+        font-size: $fs-10;
+        text-transform: uppercase;
+        line-height: 1;
+        padding: 0.5em 0;
+        transition: transform 0.5s;
+        width: 100%;
+        margin: auto 0;
+        text-align: center;
+        vertical-align: bottom;
+        @include for-phone-only {
+        }
+        @include for-tablet-portrait-up {
+        }
+        @include for-tablet-landscape-up {
         }
         @include for-desktop-up {
-            width: $width-landscape;
-            max-width: $max-desktop-width;
         }
         @include for-big-desktop-up {
-            width: $width-landscape;
-            max-width: $max-big-desktop-width;
         }
-        .nav-logo {
-            padding: 1rem 0;
-            text-align: center;
-            .nav-logo-pt1 {
-                font-size: $fs-20;
-                color: $color-White;
-                @include for-phone-only {
-                    font-size: $fs-24;
-                }
-                @include for-tablet-portrait-up {
-                    font-size: $fs-20;
-                }
-                @include for-tablet-landscape-up {
-                    margin: 0;
-                }
-                .nav-logo-pt2{
-                    color: $color-Primary;
-                }
-            }
-        }
-        .nav-links {
-            width: 100%;
-            font-family: $ff-Secondary;
-            font-weight: $fw-Bold;
-            transform: scale(1);
-            transition: display 300ms, transform 300ms;
-            display: flex;
-            overflow-x: hidden;
-            overflow-y: hidden;
-            margin: 0 auto;
-            font-size: $fs-12;
-            @include for-phone-only {
-                width: $width-portrait;
-                max-width: $max-phone-width;
-            }
-            @include for-tablet-portrait-up {
-                width: $width-portrait;
-                max-width: $max-tablet-portrait-width;
-                margin-left: auto;
-                margin-right: 0;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            @include for-tablet-landscape-up {
-                width: $width-landscape;
-                max-width: max-tablet-landscape-width;
-            }
-            @include for-desktop-up {
-                width: $width-landscape;
-                max-width: $max-desktop-width;
-            }
-            @include for-big-desktop-up {
-                width: $width-landscape;
-                max-width: $max-big-desktop-width;
-            }
-            .nav-link {
-                font-size: $fs-10;
-                text-transform: uppercase;
-                line-height: 1;
-                padding: 0.5em 0;
-                transition: transform 0.5s;
-                width: 100%;
-                margin: auto 0;
-                text-align: center;
-                vertical-align: bottom;
-                @include for-phone-only {}
-                @include for-tablet-portrait-up {}
-                @include for-tablet-landscape-up {}
-                @include for-desktop-up {}
-                @include for-big-desktop-up {}
-            }
+      }
 
-            .nav-link:link {
-                color: $color-White;
-                line-height: 1;
-                text-decoration: none;
-                text-align: center;
-            }
+      .nav-link:link {
+        color: $color-White;
+        line-height: 1;
+        text-decoration: none;
+        text-align: center;
+      }
 
-            .nav-link:hover,
-            .nav-link:focus {
-                box-shadow: $box-shadow-1;
-                -webkit-box-shadow: $box-shadow-1;
-                -moz-box-shadow: $box-shadow-1;
-                color: $color-Primary;
-                transform: scale(1.05);
-            }
+      .nav-link:hover,
+      .nav-link:focus {
+        box-shadow: $box-shadow-1;
+        -webkit-box-shadow: $box-shadow-1;
+        -moz-box-shadow: $box-shadow-1;
+        color: $color-Primary;
+        transform: scale(1.05);
+      }
 
-            .nav-link:active {
-                color: $color-Primary;
-                transform: scale(1.05);
-            }
+      .nav-link:active {
+        color: $color-Primary;
+        transform: scale(1.05);
+      }
 
-            .current {
-                background-color: hsla(0, 0, 0, 0.15);
-                cursor: not-allowed;
-                color: $color-Primary;
-            }
-
-        }
-
+      .current {
+        background-color: hsla(0, 0, 0, 0.15);
+        cursor: not-allowed;
+        color: $color-Primary;
+      }
     }
+  }
 }

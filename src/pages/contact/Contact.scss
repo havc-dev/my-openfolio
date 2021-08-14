@@ -3,7 +3,7 @@
 
 .contact {
     height: 100%;
-    width: 90%;
+    width: 95%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.925));
     display: flex;
     flex-direction: column;
@@ -34,6 +34,6 @@
     }
     .contact-text {
         text-align: center;
-        margin-block: 2em
+        margin-block: 2em;
     }
 }
