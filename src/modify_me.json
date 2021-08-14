@@ -142,35 +142,18 @@
                 }
             },
             {
-                "project_title": "CARculator",
+                "project_title": "BarberiApp",
                 "description": {
-                    "p1": "This project was done in my first week of learning.",
-                    "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
+                    "p1": "This project was made from a course, I adapted it to fit the image of a local Barber Shop named Cavaliers",
+                    "p2": "It was my first project and I like how I used the colour palette to fit their brand"
                 },
                 "images": [
                     {
-                        "title": "openfolio home",
-                        "description": "Home page",
-                        "webp": "openfolio-home-desktop.webp",
-                        "jpg":  "openfolio-home-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio about",
-                        "description": "About page",
-                        "webp": "openfolio-about-desktop.webp",
-                        "jpg":  "openfolio-about-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio projects",
-                        "description": "Projects page",
-                        "webp": "openfolio-projects-desktop.webp",
-                        "jpg":  "openfolio-projects-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio contact",
-                        "description": "Contact form",
-                        "webp": "openfolio-contact-desktop.webp",
-                        "jpg":  "openfolio-contact-desktop.jpg"
+                        "title": "barberiapp_home",
+                        "description": "Landing site",
+                        "webp": "barberiapp.webp",
+                        "png":  "barberiapp.png",
+                        "jpg":  "barberiapp.jpg"
                     }
                 ],
                 "used_tools": [
@@ -195,56 +178,23 @@
                     "icon": "fab fa-sass fa-fw fa-lg"
                     },
                     {
-                    "index": 4,
-                    "tool": "React JS",
-                    "icon": "fab fa-react fa-fw fa-lg"
+                    "index": 3,
+                    "tool": "PHP",
+                    "icon": "fab fa-php fa-fw fa-lg"
                     }
-                ],
-                "links": {
-                    "github_link": {
-                        "className": "github",
-                        "icon":"fab fa-github fa-fw fa-lg",
-                        "btn_text": "GitHub!",
-                        "href": "https://github.com/havc-dev/my-openfolio"
-                    },
-                    "live_link": {
-                        "className": "live",
-                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                        "btn_text": "Live!",
-                        "href": "/"
-                    }
-                }
+                ]
             },
             {
-                "project_title": "GASOLINAPP",
+                "project_title": "MNV Picker",
                 "description": {
-                    "p1": "This project was done in my first week of learning.",
-                    "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
+                    "p1": "This is a preview of an MVP I'm working on, I want to have a tool in case I get a fleet on Uber again",
+                    "p2": "This will allow me to get an estimate of which car will return more profit, will update soon"
                 },
                 "images": [
                     {
-                        "title": "openfolio home",
-                        "description": "Home page",
-                        "webp": "openfolio-home-desktop.webp",
-                        "jpg":  "openfolio-home-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio about",
-                        "description": "About page",
-                        "webp": "openfolio-about-desktop.webp",
-                        "jpg":  "openfolio-about-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio projects",
-                        "description": "Projects page",
-                        "webp": "openfolio-projects-desktop.webp",
-                        "jpg":  "openfolio-projects-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio contact",
-                        "description": "Contact form",
-                        "webp": "openfolio-contact-desktop.webp",
-                        "jpg":  "openfolio-contact-desktop.jpg"
+                        "title": "mnv_picker_preview",
+                        "description": "Tabs togglers",
+                        "png":  "mnp_preview.PNG"
                     }
                 ],
                 "used_tools": [
@@ -273,21 +223,7 @@
                     "tool": "React JS",
                     "icon": "fab fa-react fa-fw fa-lg"
                     }
-                ],
-                "links": {
-                    "github_link": {
-                        "className": "github",
-                        "icon":"fab fa-github fa-fw fa-lg",
-                        "btn_text": "GitHub!",
-                        "href": "https://github.com/havc-dev/my-openfolio"
-                    },
-                    "live_link": {
-                        "className": "live",
-                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                        "btn_text": "Live!",
-                        "href": "/"
-                    }
-                }
+                ]
             }
         ],
         "button": {
@@ -314,10 +250,16 @@
                     "name": "email",
                     "type": "email",
                     "placeholder": "john.doe@email.com"
+                },
+                {
+                    "label": "Subject",
+                    "name": "subject",
+                    "type": "text",
+                    "placeholder": "I have a job offer..."
                 }
         ],
         "text_area": {
-            "label": "Subject:",
+            "label": "Message:",
             "placeholder": "Your message...",
             "name": "message"
         },
