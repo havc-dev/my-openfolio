@@ -178,11 +178,25 @@
                     "icon": "fab fa-sass fa-fw fa-lg"
                     },
                     {
-                    "index": 3,
+                    "index": 4,
                     "tool": "PHP",
                     "icon": "fab fa-php fa-fw fa-lg"
                     }
-                ]
+                ],
+                "links": {
+                    "github_link": {
+                        "className": "invisible_link",
+                        "icon":"fab fa-github fa-fw fa-lg",
+                        "btn_text": "GitHub!",
+                        "href": "#"
+                    },
+                    "live_link": {
+                        "className": "invisible_link",
+                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
+                        "btn_text": "Live!",
+                        "href": "#"
+                    }
+                }
             },
             {
                 "project_title": "MNV Picker",
@@ -192,9 +206,11 @@
                 },
                 "images": [
                     {
-                        "title": "mnv_picker_preview",
+                        "title": "mnp_preview",
                         "description": "Tabs togglers",
-                        "png":  "mnp_preview.PNG"
+                        "webp":  "mnp_preview.webp",
+                        "png":  "mnp_preview.PNG",
+                        "jpg":  "mnp_preview.jpg"
                     }
                 ],
                 "used_tools": [
@@ -223,7 +239,21 @@
                     "tool": "React JS",
                     "icon": "fab fa-react fa-fw fa-lg"
                     }
-                ]
+                ],
+                "links": {
+                    "github_link": {
+                        "className": "invisible_link",
+                        "icon":"fab fa-github fa-fw fa-lg",
+                        "btn_text": "GitHub!",
+                        "href": "#"
+                    },
+                    "live_link": {
+                        "className": "invisible_link",
+                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
+                        "btn_text": "Live!",
+                        "href": "#"
+                    }
+                }
             }
         ],
         "button": {
