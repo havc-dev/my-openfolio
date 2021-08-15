@@ -3,8 +3,8 @@ import './Picture.css'
 const Picture = (props) => {
 
     const { title, webp, jpg } = props;
-    const url_webp = `/assets/images/webp/img/projects/${webp}`;
-    const url_jpg = `/assets/images/img/projects/${jpg}`;
+    const url_webp = `/assets/images/webp/projects/${webp}`;
+    const url_jpg = `/assets/images/minifed/projects/${jpg}`;
     return (
         <picture className="project-pictures">
             <source srcSet={url_webp} type="image/webp" />
