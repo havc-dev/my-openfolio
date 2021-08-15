@@ -1,18 +1,22 @@
 import Button from "../Button/Button";
 import FormInput from "./FormInput";
 import TextArea from "./TextArea";
+import Header from "../layout/Header";
 
 import './ContactForm.css';
 
 const ContactForm = (props) => {
 
-    const { my_email, input_fields, text_area, button } = props;
+    const { my_email, input_fields, text_area, button, title } = props;
     const { className, icon, btn_text, type } = button;
 
     const action = `https://formsubmit.co/${my_email}`;
 
     return (
         <form target="_blank" action={action} method="POST" className="contact-form">
+            <div className="form-header">
+                    <Header title={title}/>
+                </div>
             <div className="form-group">
                 {input_fields.map((input_field) =>
                     <FormInput
@@ -32,8 +36,6 @@ const ContactForm = (props) => {
                 />
             </div>
             <Button type={type} icon={icon} btn_text={btn_text} className={className} />
-            <input type="hidden" name="_autoresponse" value="I'll get in touch soon..."></input>
-            <input type="hidden" name="_template" value="box"></input>
         </form>
     )
 }

@@ -4,7 +4,7 @@
 .footer {
     width: 100%;
     display: flex;
-    background-color: hsla(0,0,0,0.65);
+    background-color: hsla(0,0,0,0.45);
     position: fixed;
     bottom: 0;
     right: 0;
@@ -50,7 +50,7 @@
         }
         .footer-contact {
             width: 100%;
-            font-size: $fs-12;
+            font-size: $fs-08;
         }
     }
 }

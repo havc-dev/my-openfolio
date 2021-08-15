@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
+    font-size: $fs-10;
     @include for-phone-only {
         width: $width-portrait;
         max-width: $max-phone-width;
