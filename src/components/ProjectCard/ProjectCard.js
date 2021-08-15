@@ -39,8 +39,8 @@ import './ProjectCard.css'
                         )}
                         </Slider>
                     <div className="project-links">
-                        {!github_link ? null : <Link link={github_link} className="github" />}
-                        {!live_link ? null : <Link link={live_link} className="live" />}
+                        {github_link.className === "invisible_link" ? null : <Link link={github_link} className="github" />}
+                        {live_link.className === "invisible_link" ? null : <Link link={live_link} className="live" />}
                     </div>
                 </div>
                 <div className="project-description">
