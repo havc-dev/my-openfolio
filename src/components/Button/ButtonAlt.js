@@ -1,5 +1,3 @@
-import './Button.css'
-
 const ButtonAlt = (props) => {
 
     const classes = `btn-alt ${props.className}`;

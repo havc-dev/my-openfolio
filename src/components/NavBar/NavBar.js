@@ -1,19 +1,15 @@
+import { useContext } from 'react';
+import { AppContext } from '../../context/appContext';
 import { NavLink } from 'react-router-dom';
 
-import './NavBar.css';
-
-const NavBar = (props) => {
-    
-    const { info } = props;
-    const { logo } = info;
-    const { div, span } = logo;
-
+const NavBar = () => {
+    const ctx = useContext(AppContext)
     return (
         <div className="nav-container">
             <div className='nav-bar'>
                 <div className='nav-logo'>
                     <NavLink to="/" exact={true}>
-                        <h1 className='nav-logo-pt1'>{div}<span className='nav-logo-pt2'>{span}</span></h1>
+                        <div className='nav-logo-pt1'>{ctx.info.navbar.logo.div}<span className='nav-logo-pt2'>{ctx.info.navbar.logo.span}</span></div>
                     </NavLink>
                 </div>
                 <nav className="nav-links">

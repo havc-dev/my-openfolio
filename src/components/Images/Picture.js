@@ -1,5 +1,3 @@
-import './Picture.css'
-
 const Picture = (props) => {
 
     const { title, webp, jpg } = props;

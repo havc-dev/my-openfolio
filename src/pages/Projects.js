@@ -1,14 +1,15 @@
+import { useContext } from 'react';
+import AppContext from '../context/appContext';
+
 import Slider from "react-slick";
 
-import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import Button from "../../components/Button/Button";
-import Header from '../../components/layout/Header';
-
-import './Projects.css';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
+import Button from "../components/Button/Button";
+import Header from '../components/layout/Header';
 
 const Projects = (props) => {
-    const { info } = props;
-    const { title, projects, button } = info;
+    const ctx = useContext(AppContext)
+    const { title, projects, button } = ctx.info.projects;
     const { icon, btn_text, type} = button;
 
     var sliderSettings = {

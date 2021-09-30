@@ -1,5 +1,3 @@
-import './Link.css'
-
 const Link = (props) => {
 
     const { link } = props;

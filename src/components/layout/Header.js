@@ -1,5 +1,3 @@
-import './Header.css';
-
 const Header = (props) => {
     
     const { title, subtitle, location } = props;

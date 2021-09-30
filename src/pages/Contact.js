@@ -1,11 +1,13 @@
-import ContactForm from '../../components/ContactForm/ContactForm';
+import { useContext } from 'react';
+import AppContext from '../context/appContext';
 
-import './Contact.css';
+import ContactForm from '../components/ContactForm/ContactForm';
 
-const Contact = (props) => {
 
-    const { info } = props;
-    const { title, my_email, input_fields, text_area, button } = info;
+const Contact = () => {
+    const ctx = useContext(AppContext)
+    console.log(ctx)
+    const { title, my_email, input_fields, text_area, button } = ctx.info.contact;
 
     return (
         <div className="page-wrapper-contact">

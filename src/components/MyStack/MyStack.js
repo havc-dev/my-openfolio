@@ -1,8 +1,5 @@
 import Skill from "../Skill/Skill";
 
-
-import './MyStack.css'
-
 const Stack = (props) => {
     
     const { stack } = props;

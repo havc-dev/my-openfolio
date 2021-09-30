@@ -1,14 +1,14 @@
+import { useContext } from 'react';
+import AppContext from '../context/appContext';
 
-import Header from "../../components/layout/Header";
-import MyStack from "../../components/MyStack/MyStack";
-import Button from "../../components/Button/Button";
+import Header from "../components/layout/Header";
+import MyStack from "../components/MyStack/MyStack";
+import Button from "../components/Button/Button";
 
-import './About.css'
-
-const About = (props) => {
-  
-  const { info } = props;
-  const { title, subtitle, location, aboutMeP1, aboutMeP2, stack, button } = info;
+const About = () => {
+  const ctx = useContext(AppContext)
+  console.log(ctx)
+  const { title, subtitle, location, aboutMeP1, aboutMeP2, stack, button } = ctx.info.about;
   const { icon, btn_text, type} = button;
 
   return (

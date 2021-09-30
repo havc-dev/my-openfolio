@@ -1,45 +1,45 @@
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Projects from './pages/projects/Projects';
-import Contact from './pages/contact/Contact';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
-function App(props) {
-  const { navbar, home, about, projects, contact } = props.info;
+import { AppContextProvider } from "./context/appContext";
+
+function App() {
 
   return (
-    <>
-    <div className="bg-overlay"></div>
-    <div className="app-wrapper">
+    <div className='app-wrapper'>
+      <AppContextProvider>
+        <Router>
+        <NavBar />
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
 
-      <NavBar info={navbar}/>
-      { 
-        <Switch>
-          <Route exact path='/'>
-            <Home info={home}/>
-          </Route>
+            <Route path='/about'>
+              <About />
+            </Route>
 
-          <Route path='/about'>
-            <About info={about}/>
-          </Route>
+            <Route path='/projects'>
+              <Projects />
+            </Route>
 
-          <Route path='/projects'>
-            <Projects info={projects}/>
-          </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
 
-          <Route path='/contact'>
-            <Contact info={contact}/>
-          </Route>
-        </Switch>
-      }
-      <Footer info={contact}/>
+            <Route>Not found</Route>
+          </Switch>
+        <Footer />
+        </Router>
+      </AppContextProvider>
     </div>
-    </>
   );
 }
 

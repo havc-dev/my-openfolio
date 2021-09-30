@@ -3,8 +3,6 @@ import FormInput from "./FormInput";
 import TextArea from "./TextArea";
 import Header from "../layout/Header";
 
-import './ContactForm.css';
-
 const ContactForm = (props) => {
 
     const { my_email, input_fields, text_area, button, title } = props;
