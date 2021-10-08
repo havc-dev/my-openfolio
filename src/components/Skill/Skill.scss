@@ -17,7 +17,7 @@
     }
     @include for-tablet-landscape-up {}
     @include for-desktop-up {
-        width: 250px;
+        width: 200px;
     }
     @include for-big-desktop-up {}
     .skill-icon {
@@ -25,7 +25,8 @@
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding: 1em
+        padding: 1em;
+        width: 30px;
     }
     
     .skill-text {

@@ -1,302 +1,182 @@
 {
-    "navbar": {
-        "logo": {
-            "div":"Adrián",
-            "span":"Curiel"
-        }
-    },
-    "home": {
-        "title": "Welcome",
-        "sub_title": "I'm Adrián Curiel",
-        "text": "I'm a self-taught Front End Developer who likes CSS and the customization posibilities it offers, this portfolio is meant to help backend developers build a nice portfolio",
-        "button": {
-            "icon":"fas fa-handshake fa-fw fa-lg",
-            "btn_text": "Contact!",
-            "type": "button"
-        }
-    },
-    "about": {
-        "title": "About Me",
-        "subtitle": "I always loved to learn!",
-        "location": "Currently based In Cancún, Mx",
-        "aboutMeP1": "I really enjoy to keep my mind busy learning new things, a good friend introduced me to programming and now I can say I found my happy place",
-        "aboutMeP2": "I want to constantly improve my Front End skills. I Also like the idea of being able to develop my own projects so I have in mind learning Back End in the future",
-        "stack": [
-            {
+  "navbar": {
+    "logo": {
+      "div": "Adrián",
+      "span": "Curiel"
+    }
+  },
+  "home": {
+    "title": "Welcome",
+    "sub_title": "I'm Adrián Curiel",
+    "text": "I'm a self-taught Front End Developer who likes to bring to life the ideas that are born in the shower",
+    "button": {
+      "icon": "fas fa-handshake fa-fw fa-lg",
+      "btn_text": "Contact!",
+      "type": "button"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "I always loved to learn!",
+    "location": "Currently based In Cancún, Mx",
+    "aboutMeP1": "With must of things in life, once you learn how to do something, you could do it forever with minimal or non existant changes",
+    "aboutMeP2": "I was bored until... I found programming, now I am learning new things everyday!",
+    "stack": [
+      {
+        "index": 0,
+        "tool": "HTML5",
+        "icon": "fab fa-html5 fa-fw fa-lg"
+      },
+      {
+        "index": 1,
+        "tool": "CSS",
+        "icon": "fab fa-css3-alt fa-fw fa-lg"
+      },
+      {
+        "index": 2,
+        "tool": "JavaScript",
+        "icon": "fab fa-js fa-fw fa-lg"
+      },
+      {
+        "index": 3,
+        "tool": "Sass",
+        "icon": "fab fa-sass fa-fw fa-lg"
+      },
+      {
+        "index": 4,
+        "tool": "React JS",
+        "icon": "fab fa-react fa-fw fa-lg"
+      },
+      {
+        "index": 5,
+        "tool": "Gulp",
+        "icon": "fab fa-gulp fa-fw fa-lg"
+      }
+    ],
+    "button": {
+      "icon": "fas fa-handshake fa-fw fa-lg",
+      "btn_text": "Contact!",
+      "type": "button"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "projects": [
+      {
+        "project_title": "Comunidad Summa",
+        "description": {
+          "p1": "This project is *work in progress* but it showcases my most recent skills",
+          "p2": "I'm doing the Frontend while a friend is coding the backend, it implements user authentication and authorization via JWT and it's state is managed via useContext, current design it's mobile only"
+        },
+        "images": [
+          {
+            "title": "summa_home",
+            "description": "Landing site",
+            "webp": "summa_home.webp",
+            "png": "summa_home.png",
+            "jpg": "summa_home.jpg"
+          },
+          {
+            "title": "summa_contact",
+            "description": "Contact form",
+            "webp": "summa_contact.webp",
+            "png": "summa_contact.png",
+            "jpg": "summa_contact.jpg"
+          },
+          {
+            "title": "summa_user_welcome_screen",
+            "description": "User welome screen, summary",
+            "webp": "summa_user_welcome_screen.webp",
+            "png": "summa_user_welcome_screen.png",
+            "jpg": "summa_user_welcome_screen.jpg"
+          },
+          {
+            "title": "summa_community_menu",
+            "description": "Prototype of the community menu",
+            "webp": "summa_community_menu.webp",
+            "png": "summa_community_menu.png",
+            "jpg": "summa_community_menu.jpg"
+          }
+        ],
+        "used_tools": [
+          {
             "index": 0,
-            "tool": "HTML5",
-            "icon": "fab fa-html5 fa-fw fa-lg"
-            },
-            {
+            "tool": "Tailwind",
+            "icon": "tailwind"
+          },
+          {
             "index": 1,
-            "tool": "CSS",
-            "icon": "fab fa-css3-alt fa-fw fa-lg"
-            },
-            {
-            "index": 2,
-            "tool": "JavaScript",
-            "icon": "fab fa-js fa-fw fa-lg"
-            },
-            {
-            "index": 3,
-            "tool": "Sass",
-            "icon": "fab fa-sass fa-fw fa-lg"
-            },
-            {
-            "index": 4,
             "tool": "React JS",
             "icon": "fab fa-react fa-fw fa-lg"
-            },
-            {
-            "index": 5,
-            "tool": "Gulp",
-            "icon": "fab fa-gulp fa-fw fa-lg"
-            }
+          },
+          {
+            "index": 2,
+            "tool": "Mongo DB",
+            "icon": "fas fa-database fa-fw fa-lg"
+          },
+          {
+            "index": 3,
+            "tool": "Express",
+            "icon": "fas fa-server fa-fw fa-lg"
+          }
         ],
-        "button": {
-            "icon":"fas fa-handshake fa-fw fa-lg",
-            "btn_text": "Contact!",
-            "type": "button"
+        "links": {
+          "github_link": {
+            "className": "invisible_link",
+            "icon": "fab fa-github fa-fw fa-lg",
+            "btn_text": "GitHub!",
+            "href": "#"
+          },
+          "live_link": {
+            "className": "invisible_link",
+            "icon": "fab fa-firefox-browser fa-fw fa-lg",
+            "btn_text": "Live!",
+            "href": "#"
+          }
         }
-    },
-    "projects": {
-        "title": "My Projects",
-        "projects": [
-            {
-                "project_title": "Openfolio",
-                "description": {
-                    "p1": "This portfolio is open-source, it's done as a solution for Developers who just need an easy to use template.",
-                    "p2": "In order to use it you just need to update the information in a Json file named \"modify_me\"."
-                },
-                "images": [
-                    {
-                        "title": "openfolio home",
-                        "description": "Home page",
-                        "webp": "openfolio-home-desktop.webp",
-                        "jpg":  "openfolio-home-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio about",
-                        "description": "About page",
-                        "webp": "openfolio-about-desktop.webp",
-                        "jpg":  "openfolio-about-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio projects",
-                        "description": "Projects page",
-                        "webp": "openfolio-projects-desktop.webp",
-                        "jpg":  "openfolio-projects-desktop.jpg"
-                    },
-                    {
-                        "title": "openfolio contact",
-                        "description": "Contact form",
-                        "webp": "openfolio-contact-desktop.webp",
-                        "jpg":  "openfolio-contact-desktop.jpg"
-                    }
-                ],
-                "used_tools": [
-                    {
-                    "index": 0,
-                    "tool": "HTML5",
-                    "icon": "fab fa-html5 fa-fw fa-lg"
-                    },
-                    {
-                    "index": 1,
-                    "tool": "CSS",
-                    "icon": "fab fa-css3-alt fa-fw fa-lg"
-                    },
-                    {
-                    "index": 2,
-                    "tool": "JavaScript",
-                    "icon": "fab fa-js fa-fw fa-lg"
-                    },
-                    {
-                    "index": 3,
-                    "tool": "Sass",
-                    "icon": "fab fa-sass fa-fw fa-lg"
-                    },
-                    {
-                    "index": 4,
-                    "tool": "React JS",
-                    "icon": "fab fa-react fa-fw fa-lg"
-                    },
-                    {
-                    "index": 5,
-                    "tool": "Gulp",
-                    "icon": "fab fa-gulp fa-fw fa-lg"
-                    }
-                ],
-                "links": {
-                    "github_link": {
-                        "className": "github",
-                        "icon":"fab fa-github fa-fw fa-lg",
-                        "btn_text": "GitHub!",
-                        "href": "https://github.com/havc-dev/my-openfolio"
-                    },
-                    "live_link": {
-                        "className": "live",
-                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                        "btn_text": "Live!",
-                        "href": "/"
-                    }
-                }
-            },
-            {
-                "project_title": "BarberiApp",
-                "description": {
-                    "p1": "This project was made from a course, I adapted it to fit the image of a local Barber Shop named Cavaliers",
-                    "p2": "It was my first project and I like how I used the colour palette to fit their brand"
-                },
-                "images": [
-                    {
-                        "title": "barberiapp_home",
-                        "description": "Landing site",
-                        "webp": "barberiapp.webp",
-                        "png":  "barberiapp.png",
-                        "jpg":  "barberiapp.jpg"
-                    }
-                ],
-                "used_tools": [
-                    {
-                    "index": 0,
-                    "tool": "HTML5",
-                    "icon": "fab fa-html5 fa-fw fa-lg"
-                    },
-                    {
-                    "index": 1,
-                    "tool": "CSS",
-                    "icon": "fab fa-css3-alt fa-fw fa-lg"
-                    },
-                    {
-                    "index": 2,
-                    "tool": "JavaScript",
-                    "icon": "fab fa-js fa-fw fa-lg"
-                    },
-                    {
-                    "index": 3,
-                    "tool": "Sass",
-                    "icon": "fab fa-sass fa-fw fa-lg"
-                    },
-                    {
-                    "index": 4,
-                    "tool": "PHP",
-                    "icon": "fab fa-php fa-fw fa-lg"
-                    }
-                ],
-                "links": {
-                    "github_link": {
-                        "className": "invisible_link",
-                        "icon":"fab fa-github fa-fw fa-lg",
-                        "btn_text": "GitHub!",
-                        "href": "#"
-                    },
-                    "live_link": {
-                        "className": "invisible_link",
-                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                        "btn_text": "Live!",
-                        "href": "#"
-                    }
-                }
-            },
-            {
-                "project_title": "MNV Picker",
-                "description": {
-                    "p1": "This is a preview of an MVP I'm working on, I want to have a tool in case I get a fleet on Uber again",
-                    "p2": "This will allow me to get an estimate of which car will return more profit, will update soon"
-                },
-                "images": [
-                    {
-                        "title": "mnp_preview",
-                        "description": "Tabs togglers",
-                        "webp":  "mnp_preview.webp",
-                        "png":  "mnp_preview.PNG",
-                        "jpg":  "mnp_preview.jpg"
-                    }
-                ],
-                "used_tools": [
-                    {
-                    "index": 0,
-                    "tool": "HTML5",
-                    "icon": "fab fa-html5 fa-fw fa-lg"
-                    },
-                    {
-                    "index": 1,
-                    "tool": "CSS",
-                    "icon": "fab fa-css3-alt fa-fw fa-lg"
-                    },
-                    {
-                    "index": 2,
-                    "tool": "JavaScript",
-                    "icon": "fab fa-js fa-fw fa-lg"
-                    },
-                    {
-                    "index": 3,
-                    "tool": "Sass",
-                    "icon": "fab fa-sass fa-fw fa-lg"
-                    },
-                    {
-                    "index": 4,
-                    "tool": "React JS",
-                    "icon": "fab fa-react fa-fw fa-lg"
-                    }
-                ],
-                "links": {
-                    "github_link": {
-                        "className": "invisible_link",
-                        "icon":"fab fa-github fa-fw fa-lg",
-                        "btn_text": "GitHub!",
-                        "href": "#"
-                    },
-                    "live_link": {
-                        "className": "invisible_link",
-                        "icon":"fab fa-firefox-browser fa-fw fa-lg",
-                        "btn_text": "Live!",
-                        "href": "#"
-                    }
-                }
-            }
-        ],
-        "button": {
-            "icon":"fas fa-handshake fa-fw fa-lg",
-            "btn_text": "Contact!",
-            "type": "button"
-        }
-    },
-    "contact": {
-        "title": "Get in Touch",
-        "my_email": "havc.developer@gmail.com",
-        "my_phone": "+52 1 998-385-3719",
-        "my_phone_unformatted": "5219983853719",
-        "my_repo": "https://github.com/havc-dev",
-        "input_fields": [
-                {
-                    "label": "Your Name",
-                    "name": "name",
-                    "type": "text",
-                    "placeholder": "John Doe"
-                },
-                {
-                    "label": "Your e-Mail",
-                    "name": "email",
-                    "type": "email",
-                    "placeholder": "john.doe@email.com"
-                },
-                {
-                    "label": "Subject",
-                    "name": "subject",
-                    "type": "text",
-                    "placeholder": "I have a job offer..."
-                }
-        ],
-        "text_area": {
-            "label": "Message:",
-            "placeholder": "Your message...",
-            "name": "message"
-        },
-        "button": {
-            "icon":"fas fa-envelope fa-fw fa-lg",
-            "btn_text": "Send e-Mail",
-            "type": "submit"
-        }
+      }
+    ],
+    "button": {
+      "icon": "fas fa-handshake fa-fw fa-lg",
+      "btn_text": "Contact!",
+      "type": "button"
     }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "my_email": "havc.developer@gmail.com",
+    "my_phone": "+52 1 998-385-3719",
+    "my_phone_unformatted": "5219983853719",
+    "my_repo": "https://github.com/havc-dev",
+    "input_fields": [
+      {
+        "label": "Your Name",
+        "name": "name",
+        "type": "text",
+        "placeholder": "John Doe"
+      },
+      {
+        "label": "Your e-Mail",
+        "name": "email",
+        "type": "email",
+        "placeholder": "john.doe@email.com"
+      },
+      {
+        "label": "Subject",
+        "name": "subject",
+        "type": "text",
+        "placeholder": "I have a job offer..."
+      }
+    ],
+    "text_area": {
+      "label": "Message:",
+      "placeholder": "Your message...",
+      "name": "message"
+    },
+    "button": {
+      "icon": "fas fa-envelope fa-fw fa-lg",
+      "btn_text": "Send e-Mail",
+      "type": "submit"
+    }
+  }
 }

@@ -1,6 +1,5 @@
 import Skill from "../Skill/Skill";
 
-
 import './MyStack.css'
 
 const Stack = (props) => {
@@ -19,6 +18,9 @@ const Stack = (props) => {
                         skill={skill.tool}
                     />
                 )}
+                <Skill skill="Tailwind CSS"
+                    icon={"tailwind"}
+                />
             </div>
         </div>
     )

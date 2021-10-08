@@ -32,7 +32,7 @@
 
 @media (min-width: 1300px) {
   .skill-wrapper {
-    width: 250px;
+    width: 200px;
   }
 }
 
@@ -46,6 +46,7 @@
           justify-content: center;
   margin: 0 auto;
   padding: 1em;
+  width: 30px;
 }
 
 .skill-wrapper .skill-text {
