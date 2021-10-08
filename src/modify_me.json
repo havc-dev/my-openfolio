@@ -65,7 +65,7 @@
       {
         "project_title": "Comunidad Summa",
         "description": {
-          "p1": "This project is *work in progress* but it showcases my most recent skills",
+          "p1": "This project is *work in progress* but it showcases my most recent skills, feel free to login with email: test@test.com, password: asdfqwer1234",
           "p2": "I'm doing the Frontend while a friend is coding the backend, it implements user authentication and authorization via JWT and it's state is managed via useContext, current design it's mobile only"
         },
         "images": [
@@ -128,7 +128,7 @@
             "href": "#"
           },
           "live_link": {
-            "className": "invisible_link",
+            "className": "",
             "icon": "fab fa-firefox-browser fa-fw fa-lg",
             "btn_text": "Live!",
             "href": "https://distracted-einstein-ff3a15.netlify.app/"
